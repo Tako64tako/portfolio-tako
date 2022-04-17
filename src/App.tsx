@@ -14,9 +14,6 @@ const App: React.FC = () => {
     <>
       <section>
         <Navbar  />
-        <section>
-          <Themas />
-        </section>
       </section>
       <section>
         <MyAvatar />

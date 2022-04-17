@@ -42,7 +42,7 @@ const Works: React.FC = () => {
           <List className={classes.root}>
             <ListItem>
               {/*  GitHubリポジトリなどのURLを貼る */}
-              <ListItemLink href='#'>
+              <ListItemLink href='https://github.com/SystemEngineeringTeam/koukaten2021'>
                 <ListItemAvatar>
                   <Avatar>
                     <FolderIcon />
@@ -50,13 +50,13 @@ const Works: React.FC = () => {
                 </ListItemAvatar>
                 {/* 「primary」に作品名、「secondary」に説明文を書く */}
                 <ListItemText disableTypography
-                  primary={<Typography className={classes.typography} variant="body1">制作物</Typography>}
-                  secondary={<Typography className={classes.typography} variant="body2">制作途中...</Typography>}
+                  primary={<Typography className={classes.typography} variant="body1">シス研人数出る蔵 </Typography>}
+                  secondary={<Typography className={classes.typography} variant="body2"> 愛工大祭「工科展」 最優秀賞</Typography>}
                 />
               </ListItemLink>
             </ListItem>
             {/* <ListItem>
-              <ListItemLink href='#'>
+              <ListItemLink href=''>
                 <ListItemAvatar>
                   <Avatar>
                     <FolderIcon />

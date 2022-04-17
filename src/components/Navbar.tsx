@@ -3,7 +3,7 @@ import AnchorLink from 'react-anchor-link-smooth-scroll'
 import AppBar from '@material-ui/core/AppBar'
 import Toolbar from '@material-ui/core/Toolbar'
 import Button from '@material-ui/core/Button'
-
+import Themas from '../thema/SampleTemplate'
 const Navbar: React.FC = () => {
   return (
     <>
@@ -45,6 +45,7 @@ const Navbar: React.FC = () => {
             CONTACT
             </Button>
           </AnchorLink>
+          <Themas></Themas>
         </Toolbar>
       </AppBar>
     </>
