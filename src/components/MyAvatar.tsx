@@ -5,7 +5,7 @@ import Avatar from '@material-ui/core/Avatar'
 import Typography from '@material-ui/core/Typography'
 
 // 画像ファイルをインポート
-import ImageFile from '../static/images/myavatar.png'
+import ImageFile from '../static/images/MyAvatar.png'
 
 const useStyles = makeStyles((theme) => ({
   // 表示サイズを指定
