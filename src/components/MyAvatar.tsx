@@ -35,9 +35,9 @@ const MyAvatar: React.FC = () => {
           />
           <Typography className={classes.typography} variant='h5' >
             <br /><br />
-            Yuhi Mazda<br />
-            2001/10/18<br />
-            Aichi
+            &nbsp;&nbsp;Yuhi Mazda<br />
+            &nbsp;&nbsp;2001/10/18<br />
+            &nbsp;&nbsp;Aichi
           </Typography>
         </Box>
         {/* <Box display='flex' justifyContent='center' p={1} >
