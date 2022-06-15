@@ -1,109 +1,36 @@
-import React from 'react'
-import Box from '@material-ui/core/Box'
-import Typography from '@material-ui/core/Typography'
-import { makeStyles } from '@material-ui/core/styles'
-import Link from '@material-ui/core/Link'
-import MailIcon from '@material-ui/icons/Mail'
-import TwitterIcon from '@material-ui/icons/Twitter'
-import GitHubIcon from '@material-ui/icons/GitHub'
-import InstagramIcon from '@material-ui/icons/Instagram'
-import Avatar from '@material-ui/core/Avatar'
-import { green, blue, purple, pink } from '@material-ui/core/colors'
-
-const useStyles = makeStyles((theme) => ({
-  root: {
-    display: 'flex',
-    '& > *': {
-      margin: theme.spacing(1),
-    },
-  },
-  green: {
-    color: '#fff',
-    backgroundColor: green[500],
-    "&:hover": {
-      backgroundColor: "#dcdcdc",
-      "& $icon": {
-        display: "block",
-      },
-    },
-  },
-  blue: {
-    color: theme.palette.getContrastText(blue[500]),
-    backgroundColor: blue[500],
-    "&:hover": {
-      backgroundColor: "#dcdcdc",
-      "& $icon": {
-        display: "block",
-      },
-    },
-  },
-  purple: {
-    color: theme.palette.getContrastText(purple[500]),
-    backgroundColor: purple[500],
-    "&:hover": {
-      backgroundColor: "#dcdcdc",
-      "& $icon": {
-        display: "block",
-      },
-    },
-  },
-  pink: {
-    color: theme.palette.getContrastText(pink[500]),
-    backgroundColor: pink[500],
-    "&:hover": {
-      backgroundColor: "#dcdcdc",
-      "& $icon": {
-        display: "block",
-      },
-    },
-  },
-  icon: {
-    display: "flex",
-  },
-  typography: {
-    fontFamily: [
-      'Noto Sans',
-      'sans-serif',
-    ].join(','),
-  },
-}));
+import { Link, Stack } from "@mui/material";
+import { Box } from "@mui/system";
+import React from "react";
+import { GlobalBoxWrap, GlobalSubTitle } from "../styles/globalMUI";
+import GitHubIcon from "@mui/icons-material/GitHub";
+import InstagramIcon from '@mui/icons-material/Instagram';
+import TwitterIcon from '@mui/icons-material/Twitter';
+import MailIcon from '@mui/icons-material/Mail';
 
 const Contact: React.FC = () => {
-  const classes = useStyles();
+    return (
 
-  return (
-    <>
-      <Box p={2}>
-        <Box display='flex' justifyContent='center' p={1} >
-          <Typography variant='h5' className={classes.typography} >
-            Contact
-          </Typography>
-        </Box>
-        <Box className={classes.root}  display='flex' justifyContent='center' p={1}>
-          <Link href='mailto:sanscript0550@gmail.com' color='inherit'>
-            <Avatar className={classes.green}>
-              <MailIcon />
-            </Avatar>
-          </Link>
-          <Link href='https://twitter.com/TAKO64tako' color='inherit'>
-            <Avatar className={classes.blue}>
-              <TwitterIcon />
-            </Avatar>
-          </Link>
-          <Link href='https://github.com/Tako64tako' color='inherit'>
-            <Avatar className={classes.purple}>
-              <GitHubIcon />
-            </Avatar>
-          </Link>
-          <Link href='https://www.instagram.com/tako64tako/' color='inherit'>
-            <Avatar className={classes.pink}>
-              <InstagramIcon />
-            </Avatar>
-          </Link>
-        </Box>
-      </Box>
-    </>
-  );
+              <GlobalBoxWrap sx={{textAlign: 'center'}}>
+                <Box sx={{margin: '7rem'}}>
+                  <GlobalSubTitle>Contact Me</GlobalSubTitle>
+                    <Box sx={{margin: '1rem'}}>
+                        <Link href="mailto:contactjustincodes@gmail.com"
+                        sx={{
+                            color: '#dda73b',
+                            textDecoration: 'none'
+                        }}
+                        >
+                        </Link>
+                        <Stack direction="row" spacing={4} justifyContent="center" marginTop="1rem">
+                          <Link href="https://github.com/Tako64tako" underline="none" target="_blank" color="inherit"><GitHubIcon/></Link>
+                          <Link href="https://www.instagram.com/tako64tako" underline="none" target="_blank" color="inherit"><InstagramIcon /></Link>
+                          <Link href="https://www.twitter.com/tako64tako" underline="none" target="_blank" color="inherit"><TwitterIcon /></Link>
+                          <Link href='mailto:sanscript0550@gmail.com' underline="none" target="_blank" color='inherit'><MailIcon /></Link>
+                        </Stack>
+                    </Box>
+                  </Box>
+            </GlobalBoxWrap>
+    )
 }
 
-export default Contact;
+export default Contact

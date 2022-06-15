@@ -1,86 +1,42 @@
-import React from 'react'
-import Box from '@material-ui/core/Box'
-import { makeStyles } from '@material-ui/core/styles'
-import Card from '@material-ui/core/Card'
-import CardContent from '@material-ui/core/CardContent'
-import Typography from '@material-ui/core/Typography'
+import React from "react";
+import { Button, Grid} from "@mui/material";
+import { Box } from "@mui/system";
+import { GlobalBoxWrap, GlobalSubTitle } from "../styles/globalMUI";
+import SkillsImage  from '../styles/images/SkillImage.png'
 
-const useStyles = makeStyles({
-  root: {
-    width: 730,
-    maxWidth: '100%',
-  },
-  typography: {
-    fontFamily: [
-      'Noto Sans',
-      'sans-serif',
-    ].join(','),
-  },
-});
+const ourSkills = ['C', 'C++', 'C#', 'JavaScript', 'TypeScript', 'Python', 'Java', 'Go', 'HTML', 'CSS', 'React', 'Vue' , 'Node', 'VBA','PHP', 'Flask', 'Django', 'PostgreSQL', 'MySQL', 'Unity', 'Open CV','Bootstrap', 'Git' ,'Docker']
 
 const Skills: React.FC = () => {
-  const classes = useStyles();
-
-  return (
-    <>
-      <Box p={2}>
-        <Box display='flex' justifyContent='center' p={1} >
-          <Typography className={classes.typography} variant='h5' >
-            Skills
-          </Typography>
-        </Box>
-        <Box display='flex' justifyContent='center' p={1} >
-          <Card className={classes.root}>
-            <CardContent>
-              <Typography className={classes.typography} variant="h6">
-                Programming Language
-              </Typography>
-              <Typography className={classes.typography} color="textSecondary">
-                Python / JavaScript / Java / Go / C / C++
-              </Typography>
-            </CardContent>
-          </Card>
-        </Box>
-        <Box display='flex' justifyContent='center' p={1} >
-          <Card className={classes.root}>
-            <CardContent>
-              <Typography className={classes.typography} variant="h6">
-                Framework
-              </Typography>
-              <Typography className={classes.typography} color="textSecondary">
-                React / Django
-              </Typography>
-            </CardContent>
-          </Card>
-        </Box>
-        <Box display='flex' justifyContent='center' p={1} >
-          <Card className={classes.root}>
-            <CardContent>
-              <Typography className={classes.typography} variant="h6">
-                Database
-              </Typography>
-              <Typography className={classes.typography} color="textSecondary">
-                PostgreSQL
-              </Typography>
-            </CardContent>
-          </Card>
-        </Box>
-        <Box display='flex' justifyContent='center' p={1} >
-          <Card className={classes.root}>
-            <CardContent>
-              <Typography className={classes.typography} variant="h6">
-                AWS
-              </Typography>
-              <Typography className={classes.typography} color="textSecondary">
-                During study...
-              </Typography>
-            </CardContent>
-          </Card>
-        </Box>
-
-      </Box>
-    </>
-  );
+    return (
+        <section>
+            <GlobalBoxWrap>
+                <Grid container spacing={2}>
+                    <Grid item xs={12} md={6} lg={6}>
+                        <Box sx={{textAlign: "center"}}>
+                        <GlobalSubTitle>Skills</GlobalSubTitle>
+                                {ourSkills.map((skill) =>
+                                    <Button variant="outlined" sx={{
+                                        margin: "1rem",
+                                        color: "black",
+                                        borderColor: "#dda73b",
+                                        textTransform: "none",
+                                        '&:hover': {
+                                            backgroundColor: "rgba(221,167,59,0.2)",
+                                            borderColor: "#dda73b"
+                                        }
+                                        }}>
+                                        {skill}
+                                    </Button>
+                                )}
+                        </Box>
+                    </Grid>
+                    <Grid item xs={12} md={6} lg={6} sx={{display: "flex", justifyContent: "center"}}>
+                        <Box component="img" alt="portfolio skills" src={SkillsImage} sx={{ maxWidth: 'md' }}></Box>
+                    </Grid>
+                </Grid>
+            </GlobalBoxWrap>
+        </section>
+    )
 }
 
-export default Skills;
+export default Skills
