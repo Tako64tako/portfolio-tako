@@ -16,6 +16,7 @@ import InstagramIcon from '@mui/icons-material/Instagram';
 import TwitterIcon from '@mui/icons-material/Twitter';
 import LazyShow from "./LazyShow";
 import Footer from "./Footer";
+import MediaQuery from "react-responsive";
 
 
 // const HomeBackgroundImage = styled(Box)({
