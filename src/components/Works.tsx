@@ -1,85 +1,201 @@
-import React from 'react'
-import Box from '@material-ui/core/Box'
-import Typography from '@material-ui/core/Typography'
-
-import { makeStyles } from '@material-ui/core/styles'
-import List from '@material-ui/core/List'
-import ListItem, { ListItemProps } from '@material-ui/core/ListItem'
-import ListItemText from '@material-ui/core/ListItemText'
-import ListItemAvatar from '@material-ui/core/ListItemAvatar'
-import Avatar from '@material-ui/core/Avatar'
-import FolderIcon from '@material-ui/icons/Folder'
-
-const useStyles = makeStyles((theme) => ({
-  root: {
-    width: 770,
-    maxWidth: '100%',
-  },
-  typography: {
-    fontFamily: [
-      'Noto Sans',
-      'sans-serif',
-    ].join(','),
-  },
-}));
-
-function ListItemLink(props: ListItemProps<'a', { button?: true }>) {
-  return <ListItem button component="a" {...props} />;
-}
+import React from "react"
+import { GlobalBoxWrap, GlobalSubTitle } from "../styles/globalMUI"
+import { Grid, Link } from "@mui/material"
+import { Box } from "@mui/system"
+import Card from '@mui/material/Card'
+import CardContent from '@mui/material/CardContent'
+import CardMedia from '@mui/material/CardMedia'
+import Typography from '@mui/material/Typography'
+import { Button, CardActionArea, CardActions } from '@mui/material'
+import p1 from '../styles/assets/geekcamp.jpg'
+import p2 from '../styles/assets/koukaten.png'
+import p3 from '../styles/assets/ctos.png'
+import p4 from '../styles/assets/othello.png'
 
 const Works: React.FC = () => {
-  const classes = useStyles();
+    return (
+        <section>
+              <GlobalBoxWrap sx={{textAlign: "center", marginTop: "10rem", marginBottom: "5rem"}}>
+                <GlobalSubTitle>Projects</GlobalSubTitle>
+                    <Grid container alignItems="stretch">
+                        <Grid item xs={6} md={4}>
+                            <Box>
+                            <Card sx={{ maxWidth: 345}}>
+                                <CardActionArea>
+                                    <CardMedia
+                                    component="img"
+                                    height='auto'
+                                    image={p1}
+                                    alt="project 1"
+                                    />
+                                    <CardContent>
+                                    <Typography gutterBottom variant="h5" component="div" sx={{fontWeight: 600}}>
+                                        A warehouse where people can see
+                                    </Typography>
+                                    <Typography variant="body2" color="text.secondary">
+                                        Creation of mobile apps and web apps that detect the number of people in a room with Ibeacon.It was a three-person team in a two-day hackthon.I am in charge of sending and receiving Ibeacon, registering data in Firebase, and developing the backend.geekcamp effort award.
+                                    </Typography>
+                                    </CardContent>
+                                </CardActionArea>
+                                <CardActions>
+                                    <Button size="small" sx={{color: '#dda73b'}}>
+                                        <Link href="http://opc3.qqey.net/" target="_blank" underline="none" color="inherit">LIVE DEMO
+                                        </Link>
+                                    </Button>
+                                </CardActions>
+                            </Card>
+                            </Box>
+                        </Grid>
+                        <Grid item xs={6} md={4}>
+                            <Box>
+                                <Card sx={{ maxWidth: 345 }}>
+                                    <CardActionArea>
+                                        <CardMedia
+                                        component="img"
+                                        height='auto'
+                                        image={p2}
+                                        alt="project 2"
+                                        />
+                                        <CardContent>
+                                        <Typography gutterBottom variant="h5" component="div" sx={{fontWeight: 600}}>
+                                          The number of people at the Sys Lab
+                                        </Typography>
+                                        <Typography variant="body2" color="text.secondary">
+                                          It took 5 people to create a web application that reads the number of people from the camera to the club room over half a year.Responsible for backend development and deployment.University festival highest award work.
+                                        </Typography>
+                                        </CardContent>
+                                    </CardActionArea>
+                                    <CardActions>
+                                        <Button size="small" sx={{color: '#dda73b'}}>
+                                        <Link href="https://set1.ie.aitech.ac.jp/koukaten2021/" target="_blank" underline="none" color="inherit">Live Demo
+                                        </Link>
 
-  return (
-    <>
-      <Box p={2}>
-        <Box display='flex' justifyContent='center' p={1} >
-          <Typography variant='h5' className={classes.typography}>
-            Works
-          </Typography>
-        </Box>
-        <Box display='flex' justifyContent='center' p={1} >
-          <List className={classes.root}>
-            <ListItem>
-              {/*  GitHubリポジトリなどのURLを貼る */}
-              <ListItemLink href='https://github.com/SystemEngineeringTeam/koukaten2021'>
-                <ListItemAvatar>
-                  <Avatar>
-                    <FolderIcon />
-                  </Avatar>
-                </ListItemAvatar>
-                {/* 「primary」に作品名、「secondary」に説明文を書く */}
-                <ListItemText disableTypography
-                  primary={<Typography className={classes.typography} variant="body1">シス研人数出る蔵 </Typography>}
-                  secondary={<Typography className={classes.typography} variant="body2"> 愛工大祭「工科展」 最優秀賞</Typography>}
-                />
-              </ListItemLink>
-            </ListItem>
-            {/* <ListItem>
-              <ListItemLink href=''>
-                <ListItemAvatar>
-                  <Avatar>
-                    <FolderIcon />
-                  </Avatar>
-                </ListItemAvatar>
-                <ListItemText primary='Work2' secondary='Work2です。' />
-              </ListItemLink>
-            </ListItem>
-            <ListItem>
-              <ListItemLink href='#'>
-                <ListItemAvatar>
-                  <Avatar>
-                    <FolderIcon />
-                  </Avatar>
-                </ListItemAvatar>
-                <ListItemText primary='Work3' secondary='Work3です。' />
-              </ListItemLink>
-            </ListItem> */}
-          </List>
-        </Box>
-      </Box>
-    </>
-  );
+                                        </Button>
+                                    </CardActions>
+                                </Card>
+                            </Box>
+                        </Grid>
+                        <Grid item xs={6} md={4}>
+                            <Box>
+                                <Card sx={{ maxWidth: 345 }}>
+                                    <CardActionArea>
+                                        <CardMedia
+                                        component="img"
+                                        height='auto'
+                                        image={p3}
+                                        alt="project 3"
+                                        />
+                                        <CardContent>
+                                        <Typography gutterBottom variant="h5" component="div" sx={{fontWeight: 600}}>
+                                          Online Try On Service<br />
+                                        </Typography>
+                                        <Typography variant="body2" color="text.secondary">
+                                            A service that allows you to change clothes on the Web was created by 5 people over half a year.Responsible for database definition, environment construction, and backend development.Second place work in the lecture.<br/>
+                                        </Typography>
+                                        </CardContent>
+                                    </CardActionArea>
+                                    <CardActions>
+                                        <Button size="small" sx={{color: '#dda73b'}}>
+                                            <Link href="https://github.com/Tako64tako/CTOs" target="_blank" underline="none" color="inherit">GITHUB LINK
+                                            </Link>
+                                        </Button>
+                                    </CardActions>
+                                </Card>
+                            </Box>
+                        </Grid>
+                    </Grid>
+        </GlobalBoxWrap>
+        <GlobalBoxWrap sx={{textAlign: "center", marginTop: "2rem", marginBottom: "5rem"}}>
+                    <Grid container alignItems="stretch">
+                        <Grid item xs={6} md={4}>
+                            <Box>
+                            <Card sx={{ maxWidth: 345}}>
+                                <CardActionArea>
+                                    <CardMedia
+                                    component="img"
+                                    height='auto'
+                                    image={p4}
+                                    alt="project 1"
+                                    />
+                                    <CardContent>
+                                    <Typography gutterBottom variant="h5" component="div" sx={{fontWeight: 600}}>
+                                        Othello Game
+                                    </Typography>
+                                    <Typography variant="body2" color="text.secondary">
+                                        A web Othello game with Python was created by 6 people over 2 weeks.Responsible for backend development, frontend development and deployment.
+                                    </Typography>
+                                    </CardContent>
+                                </CardActionArea>
+                                <CardActions>
+                                    <Button size="small" sx={{color: '#dda73b'}}>
+                                        <Link href="https://github.com/2021AIT-OOP2-G06/oop2-othello" target="_blank" underline="none" color="inherit">Github Link
+                                        </Link>
+                                    </Button>
+                                </CardActions>
+                            </Card>
+                            </Box>
+                        </Grid>
+                        {/* <Grid item xs={6} md={4}>
+                            <Box>
+                                <Card sx={{ maxWidth: 345 }}>
+                                    <CardActionArea>
+                                        <CardMedia
+                                        component="img"
+                                        height='auto'
+                                        image={p2}
+                                        alt="project 2"
+                                        />
+                                        <CardContent>
+                                        <Typography gutterBottom variant="h5" component="div" sx={{fontWeight: 600}}>
+                                          The number of people at the Sys Lab
+                                        </Typography>
+                                        <Typography variant="body2" color="text.secondary">
+                                          It took 5 people to create a web application that reads the number of people from the camera to the club room over half a year.Responsible for backend development and deployment.University festival highest award work.
+                                        </Typography>
+                                        </CardContent>
+                                    </CardActionArea>
+                                    <CardActions>
+                                        <Button size="small" sx={{color: '#dda73b'}}>
+                                        <Link href="https://set1.ie.aitech.ac.jp/koukaten2021/" target="_blank" underline="none" color="inherit">Live Demo
+                                        </Link>
+
+                                        </Button>
+                                    </CardActions>
+                                </Card>
+                            </Box>
+                        </Grid>
+                        <Grid item xs={6} md={4}>
+                            <Box>
+                                <Card sx={{ maxWidth: 345 }}>
+                                    <CardActionArea>
+                                        <CardMedia
+                                        component="img"
+                                        height='auto'
+                                        image={p3}
+                                        alt="project 3"
+                                        />
+                                        <CardContent>
+                                        <Typography gutterBottom variant="h5" component="div" sx={{fontWeight: 600}}>
+                                            Online fitting service
+                                        </Typography>
+                                        <Typography variant="body2" color="text.secondary">
+                                            A service that allows you to change clothes on the Web was created by 5 people over half a year.Responsible for database definition, environment construction, and backend development.Second place work in the lecture.
+                                        </Typography>
+                                        </CardContent>
+                                    </CardActionArea>
+                                    <CardActions>
+                                        <Button size="small" sx={{color: '#dda73b'}}>
+                                            <Link href="https://github.com/Tako64tako/CTOs" target="_blank" underline="none" color="inherit">GITHUB LINK
+                                            </Link>
+                                        </Button>
+                                    </CardActions>
+                                </Card>
+                            </Box>
+                        </Grid> */}
+                    </Grid>
+            </GlobalBoxWrap>
+        </section>
+    )
 }
 
 export default Works;

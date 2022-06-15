@@ -1,55 +1,43 @@
-import React from 'react'
-import AnchorLink from 'react-anchor-link-smooth-scroll'
-import AppBar from '@material-ui/core/AppBar'
-import Toolbar from '@material-ui/core/Toolbar'
-import Button from '@material-ui/core/Button'
-import Themas from '../thema/SampleTemplate'
-const Navbar: React.FC = () => {
+import React  from "react"
+import Toolbar from '@mui/material/Toolbar'
+import { styled } from "@mui/system"
+import { Button } from "@mui/material"
+interface NavbarProps {
+  home: any
+  about: any
+  projects: any
+  skills: any
+  contact: any
+}
+
+
+const NavbarButton = styled(Button)({
+      color: '#c29334',
+      margin: '1rem',
+      ":hover": {
+        backgroundColor: 'rgba(194, 147, 52, 0.1)'
+      }
+})
+
+const Navbar:React.FC<NavbarProps> = ({home, about, projects, skills, contact}) => {
+    const scrollAbout = () => about.current.scrollIntoView({behavior: "smooth"})
+    const scrollProjects = () => projects.current.scrollIntoView({behavior: "smooth"})
+    const scrollSkills = () => skills.current.scrollIntoView({behavior: "smooth"})
+    const scrollContact = () => contact.current.scrollIntoView({behavior: "smooth"})
+
   return (
-    <>
-      <AppBar
-        color='default'
-        position='static'
-        style={{ alignItems: 'center'}}
-      >
-        <Toolbar>
-          <AnchorLink href='#about' style={{
-            textDecoration: 'none',
-            color: 'inherit'
-          }}>
-            <Button>
-              ABOUT
-            </Button>
-          </AnchorLink>
-          <AnchorLink href='#skills' style={{
-            textDecoration: 'none',
-            color: 'inherit'
-          }}>
-            <Button color='inherit'>
-              SKILLS
-            </Button>
-          </AnchorLink>
-          <AnchorLink href='#works' style={{
-            textDecoration: 'none',
-            color: 'inherit'
-          }}>
-            <Button color='inherit'>
-              Works
-            </Button>
-          </AnchorLink>
-          <AnchorLink href='#contact' style={{
-            textDecoration: 'none',
-            color: 'inherit'
-          }}>
-            <Button color='inherit'>
-            CONTACT
-            </Button>
-          </AnchorLink>
-          <Themas></Themas>
+        <Toolbar
+        sx={{
+          justifyContent: "center"
+        }}
+        >
+          <NavbarButton>Home</NavbarButton>
+          <NavbarButton onClick={scrollAbout}>About</NavbarButton>
+          <NavbarButton onClick={scrollSkills}>Skills</NavbarButton>
+          <NavbarButton onClick={scrollProjects}>Projects</NavbarButton>
+          <NavbarButton onClick={scrollContact}>Contact</NavbarButton>
         </Toolbar>
-      </AppBar>
-    </>
   );
 }
 
-export default Navbar;
+export default Navbar
