@@ -1,9 +1,9 @@
 import React from 'react'
 import { Box } from "@mui/system";
-import { Button, Grid, Link , Typography } from "@mui/material"
+import { Grid, Link , Typography } from "@mui/material"
 import { GlobalBoxWrap, GlobalSubTitle } from "../styles/globalMUI"
 import AboutImage from '../styles/images/AboutImage.png'
-import DownloadIcon from '@mui/icons-material/Download'
+// import DownloadIcon from '@mui/icons-material/Download'
 import SportsBasketballIcon from '@mui/icons-material/SportsBasketball';
 import MenuBookIcon from '@mui/icons-material/MenuBook';
 import ComputerIcon from '@mui/icons-material/Computer';

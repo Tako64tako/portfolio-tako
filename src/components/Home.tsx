@@ -9,7 +9,6 @@ import Contact from "./Contact";
 import News from "./News";
 import {Box, styled } from "@mui/system";
 import ProfileImage from '../styles/images/MyAvatar.jpg'
-import HomeBackground from '../styles/images/BackgroundImage.jpg'
 import EmailIcon from '@mui/icons-material/Email';
 import LocationOnIcon from '@mui/icons-material/LocationOn';
 import GitHubIcon from "@mui/icons-material/GitHub";
@@ -17,8 +16,6 @@ import InstagramIcon from '@mui/icons-material/Instagram';
 import TwitterIcon from '@mui/icons-material/Twitter';
 import LazyShow from "./LazyShow";
 import Footer from "./Footer";
-import MediaQuery from "react-responsive";
-
 
 // const HomeBackgroundImage = styled(Box)({
 //         backgroundImage: `linear-gradient(rgba(255,255,255,0.6), rgba(255,255,255,0.6)), url(${HomeBackground})`,

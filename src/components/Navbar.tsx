@@ -1,11 +1,11 @@
 import React  from "react"
 import Toolbar from '@mui/material/Toolbar'
-import useMedia from "use-media";
 import { styled } from "@mui/system"
 import { Button } from "@mui/material"
 import MediaQuery from "react-responsive";
 import { slide as Menu } from 'react-burger-menu'
 import './styles/style.css'
+import Thema from '../thema/SampleTemplate';
 
 interface NavbarProps {
   home: any
@@ -46,6 +46,7 @@ const Navbar:React.FC<NavbarProps> = ({home, about, projects, skills, contact,ne
             <NavbarButton onClick={scrollProjects}>Projects</NavbarButton>
             <NavbarButton onClick={scrollNews}>News</NavbarButton>
             <NavbarButton onClick={scrollContact}>Contact</NavbarButton>
+            {/* <Thema></Thema> */}
         </MediaQuery>
         <MediaQuery query="(max-width: 593px)">
           <Menu>
