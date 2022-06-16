@@ -1,16 +1,16 @@
 import React from "react"
-import { GlobalBoxWrap, GlobalSubTitle } from "../styles/globalMUI"
-import { Grid, Link } from "@mui/material"
-import { Box } from "@mui/system"
-import Card from '@mui/material/Card'
-import CardContent from '@mui/material/CardContent'
-import CardMedia from '@mui/material/CardMedia'
-import Typography from '@mui/material/Typography'
-import { Button, CardActionArea, CardActions } from '@mui/material'
-import p1 from '../styles/assets/HRBrain.jpeg'
-import p2 from '../styles/assets/koukaten.png'
-import p3 from '../styles/assets/ctos.png'
-import p4 from '../styles/assets/othello.png'
+// import { GlobalBoxWrap, GlobalSubTitle } from "../styles/globalMUI"
+// import { Grid, Link } from "@mui/material"
+// import { Box } from "@mui/system"
+// import Card from '@mui/material/Card'
+// import CardContent from '@mui/material/CardContent'
+// import CardMedia from '@mui/material/CardMedia'
+// import Typography from '@mui/material/Typography'
+// import { Button, CardActionArea, CardActions } from '@mui/material'
+// import p1 from '../styles/assets/HRBrain.jpeg'
+// import p2 from '../styles/assets/koukaten.png'
+// import p3 from '../styles/assets/ctos.png'
+// import p4 from '../styles/assets/othello.png'
 
 const News: React.FC = () => {
     return (
