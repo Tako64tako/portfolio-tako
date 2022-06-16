@@ -6,6 +6,7 @@ import About from "./About";
 import Skills from "./Skills";
 import Projects from "./Works";
 import Contact from "./Contact";
+import News from "./News";
 import {Box, styled } from "@mui/system";
 import ProfileImage from '../styles/images/MyAvatar.jpg'
 import HomeBackground from '../styles/images/BackgroundImage.jpg'
@@ -31,12 +32,13 @@ const Home: React.FC = () => {
     const mySkills = useRef(null)
     const myProjects = useRef(null)
     const myContact = useRef(null)
+    const myNews = useRef(null)
 
     return (
         <section>
                 {/* <HomeBackgroundImage> */}
                 <section>
-                    <Navbar home={myHome} about={myAbout} projects={myProjects} skills={mySkills} contact={myContact} />
+          <Navbar home={myHome} about={myAbout} projects={myProjects} skills={mySkills} news={ myNews } contact={myContact} />
                 </section>
                         <Container ref={myHome}>
                             <GlobalBoxWrap marginTop={10}>
@@ -130,6 +132,12 @@ const Home: React.FC = () => {
                     <LazyShow xCoordinates={0} yCoordinates={-50}>
                         <section ref={myProjects}>
                             <Projects/>
+                        </section>
+                    </LazyShow>
+
+                    <LazyShow xCoordinates={0} yCoordinates={50}>
+                        <section ref={myNews}>
+                            <News/>
                         </section>
                     </LazyShow>
 

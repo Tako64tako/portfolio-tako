@@ -4,6 +4,13 @@ import { Button, Grid, Link , Typography } from "@mui/material"
 import { GlobalBoxWrap, GlobalSubTitle } from "../styles/globalMUI"
 import AboutImage from '../styles/images/AboutImage.png'
 import DownloadIcon from '@mui/icons-material/Download'
+import SportsBasketballIcon from '@mui/icons-material/SportsBasketball';
+import MenuBookIcon from '@mui/icons-material/MenuBook';
+import ComputerIcon from '@mui/icons-material/Computer';
+import MapsHomeWorkIcon from '@mui/icons-material/MapsHomeWork';
+import CakeIcon from '@mui/icons-material/Cake';
+import NetworkWifiIcon from '@mui/icons-material/NetworkWifi';
+import SchoolIcon from '@mui/icons-material/School';
 // import Resume from '../styles/Hoge.pdf'
 
 const About: React.FC = () => {
@@ -28,12 +35,12 @@ const About: React.FC = () => {
                             <GlobalSubTitle>About Me</GlobalSubTitle>
                                 <Box marginTop="1rem">
                                     <Typography fontSize="18px" width="100%">
-                                      Work : Aichi Institute of Technology student.<br />
-                                      Laboratory : pluslab<br />
-                                      Birthday : 2001/10/18<br />
-                                      Birthplace : Nara prefecture.<br />
-                                      Hobbies : Programming/Reading.<br />
-                                      Special skill : Basketball.<br />
+                                      <Link href="https://www.ait.ac.jp/" underline="none" target="_blank" color="inherit">Work : Aichi Institute of Technology student<SchoolIcon></SchoolIcon></Link><br />
+                                      <Link href="https://pluslab.org/" underline="none" target="_blank" color="inherit">Laboratory : pluslab <NetworkWifiIcon></NetworkWifiIcon></Link><br />
+                                      Birthday : 2001/10/18<CakeIcon></CakeIcon><br />
+                                      Birthplace : Nara prefecture<MapsHomeWorkIcon></MapsHomeWorkIcon><br />
+                                      Hobbies : Programming<ComputerIcon></ComputerIcon>Reading< MenuBookIcon></ MenuBookIcon><br />
+                                      Special skill : Basketball<SportsBasketballIcon></SportsBasketballIcon> <br />
                                     </Typography>
                                 </Box>
                                 {/* <Box marginTop="2rem">
