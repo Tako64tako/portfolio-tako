@@ -1,22 +1,21 @@
 import React from "react"
-// import { GlobalBoxWrap, GlobalSubTitle } from "../styles/globalMUI"
-// import { Grid, Link } from "@mui/material"
-// import { Box } from "@mui/system"
-// import Card from '@mui/material/Card'
-// import CardContent from '@mui/material/CardContent'
-// import CardMedia from '@mui/material/CardMedia'
-// import Typography from '@mui/material/Typography'
-// import { Button, CardActionArea, CardActions } from '@mui/material'
-// import p1 from '../styles/assets/HRBrain.jpeg'
-// import p2 from '../styles/assets/koukaten.png'
-// import p3 from '../styles/assets/ctos.png'
-// import p4 from '../styles/assets/othello.png'
+import { GlobalBoxWrap, GlobalSubTitle } from "../styles/globalMUI"
+import { Grid, Link } from "@mui/material"
+import { Box } from "@mui/system"
+import Card from '@mui/material/Card'
+import CardContent from '@mui/material/CardContent'
+import CardMedia from '@mui/material/CardMedia'
+import Typography from '@mui/material/Typography'
+import { Button, CardActionArea, CardActions } from '@mui/material'
+import p1 from '../styles/assets/HRBrain.jpg'
+import p2 from '../styles/assets/koukaten.png'
+import p3 from '../styles/assets/ctos.png'
 
-const News: React.FC = () => {
+const Works: React.FC = () => {
     return (
         <section>
-            {/* <GlobalBoxWrap sx={{textAlign: "center", marginTop: "1rem", marginBottom: "5rem"}}> */}
-                {/* <GlobalSubTitle>News</GlobalSubTitle>
+              <GlobalBoxWrap sx={{textAlign: "center", marginTop: "1rem", marginBottom: "5rem"}}>
+                <GlobalSubTitle>News</GlobalSubTitle>
                     <Grid container alignItems="stretch">
                         <Grid item xs={6} md={4}>
                             <Box>
@@ -30,22 +29,22 @@ const News: React.FC = () => {
                                     />
                                     <CardContent>
                                     <Typography gutterBottom variant="h5" component="div" sx={{fontWeight: 600}}>
-                                        A warehouse where people can see
+                                        HRBrain Innovation Ideathon
                                     </Typography>
                                     <Typography variant="body2" color="text.secondary">
-                                        Creation of mobile apps and web apps that detect the number of people in a room with Ibeacon.It was a three-person team in a two-day hackthon.I am in charge of sending and receiving Ibeacon, registering data in Firebase, and developing the backend.geekcamp effort award.
+                                        I participated in a two-day ideathon internship.At Ideathon, there was a presentation on the final day and I was able to win the championship.
                                     </Typography>
                                     </CardContent>
                                 </CardActionArea>
                                 <CardActions>
                                     <Button size="small" sx={{color: '#dda73b'}}>
-                                        <Link href="http://opc3.qqey.net/" target="_blank" underline="none" color="inherit">LIVE DEMO
+                                        <Link href="https://talent.supporterz.jp/events/6bd10ab3-cbdc-408a-acd0-63cb00365202/" target="_blank" underline="none" color="inherit">internship
                                         </Link>
                                     </Button>
                                 </CardActions>
                             </Card>
                             </Box>
-                        </Grid> */}
+                        </Grid>
                         {/* <Grid item xs={6} md={4}>
                             <Box>
                                 <Card sx={{ maxWidth: 345 }}>
@@ -103,13 +102,8 @@ const News: React.FC = () => {
                                 </Card>
                             </Box>
                         </Grid> */}
-                    {/* </Grid>
-        </GlobalBoxWrap> */}
-                
-
-
-
-
+                    </Grid>
+        </GlobalBoxWrap>
         {/* <GlobalBoxWrap sx={{textAlign: "center", marginTop: "2rem", marginBottom: "5rem"}}>
                     <Grid container alignItems="stretch">
                         <Grid item xs={6} md={4}>
@@ -140,10 +134,11 @@ const News: React.FC = () => {
                             </Card>
                             </Box>
                         </Grid>
+
                     </Grid>
             </GlobalBoxWrap> */}
         </section>
     )
 }
 
-export default News;
+export default Works;
