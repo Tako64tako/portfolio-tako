@@ -8,13 +8,11 @@ import CardMedia from '@mui/material/CardMedia'
 import Typography from '@mui/material/Typography'
 import { Button, CardActionArea, CardActions } from '@mui/material'
 import p1 from '../styles/assets/HRBrain.jpg'
-import p2 from '../styles/assets/koukaten.png'
-import p3 from '../styles/assets/ctos.png'
 
 const Works: React.FC = () => {
     return (
         <section>
-              <GlobalBoxWrap sx={{textAlign: "center", marginTop: "1rem", marginBottom: "5rem"}}>
+            <GlobalBoxWrap sx={{textAlign: "center", marginTop: "1rem", marginBottom: "5rem"}}>
                 <GlobalSubTitle>News</GlobalSubTitle>
                     <Grid container alignItems="stretch">
                         <Grid item xs={6} md={4}>
