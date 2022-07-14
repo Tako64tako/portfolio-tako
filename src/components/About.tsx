@@ -35,8 +35,14 @@ const About: React.FC = () => {
                             <GlobalSubTitle>About Me</GlobalSubTitle>
                                 <Box marginTop="1rem">
                                     <Typography fontSize="18px" width="100%">
-                                      <Link href="https://www.ait.ac.jp/" underline="none" target="_blank" color="inherit">Work : Aichi Institute of Technology student<SchoolIcon></SchoolIcon></Link><br />
-                                      <Link href="https://pluslab.org/" underline="none" target="_blank" color="inherit">Laboratory : pluslab <NetworkWifiIcon></NetworkWifiIcon></Link><br />
+                                        <Link href="https://www.ait.ac.jp/" underline="none" target="_blank" color="inherit" sx={{'&:hover': {
+                                            backgroundColor: "rgba(221,167,59,0.2)",
+                                            borderColor: "#dda73b"
+                                        }}}>Work : Aichi Institute of Technology student<SchoolIcon></SchoolIcon></Link><br />
+                                        <Link href="https://pluslab.org/" underline="none" target="_blank" color="inherit"  sx={{'&:hover': {
+                                            backgroundColor: "rgba(221,167,59,0.2)",
+                                            borderColor: "#dda73b"
+                                        }}}>Laboratory : pluslab <NetworkWifiIcon></NetworkWifiIcon></Link><br />
                                       Birthday : 2001/10/18<CakeIcon></CakeIcon><br />
                                       Birthplace : Nara prefecture<MapsHomeWorkIcon></MapsHomeWorkIcon><br />
                                       Hobbies : Programming<ComputerIcon></ComputerIcon>Reading< MenuBookIcon></ MenuBookIcon><br />
