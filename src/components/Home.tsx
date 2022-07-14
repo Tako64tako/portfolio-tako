@@ -66,7 +66,7 @@ const Home: React.FC = () => {
                                                             <EmailIcon/>
                                                             </Grid>
                                                             <Grid item>
-                                                                <Link href='tako64tako@pluslab.org' sx={{
+                                                                <Link href='mailto:tako64tako@pluslab.org'sx={{
                                                                     color: 'black',
                                                                     fontSize: '14px',
                                                                     textDecoration: 'none'
