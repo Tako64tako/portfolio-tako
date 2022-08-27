@@ -4,8 +4,10 @@ import { Box } from "@mui/system";
 import { GlobalBoxWrap, GlobalSubTitle } from "../styles/globalMUI";
 import SkillsImage  from '../styles/images/SkillImage.png'
 
-const ourSkills = ['C', 'C++', 'C#', 'JavaScript', 'TypeScript', 'Python', 'Java', 'Go', 'HTML', 'CSS', 'React', 'Vue' , 'Node', 'VBA','PHP', 'Flask', 'Django', 'PostgreSQL', 'MySQL', 'Unity', 'Open CV','Bootstrap', 'Git' ,'Docker']
+const ourSkills = ['C', 'C++', 'C#', 'JavaScript', 'TypeScript', 'Python', 'Java', 'Go', 'HTML', 'CSS', 'React', 'Vue' , 'Node', 'VBA','PHP', 'Flask', 'Django', 'PostgreSQL', 'MySQL', 'Unity', 'Open CV','Open GL','Bootstrap', 'Git' ,'Docker']
 
+
+// console.log(ourSkills[0]);
 const Skills: React.FC = () => {
     return (
         <section>
@@ -24,10 +26,10 @@ const Skills: React.FC = () => {
                                             backgroundColor: "rgba(221,167,59,0.2)",
                                             borderColor: "#dda73b"
                                         }
-                                        }}>
+                                    }}>
                                         {skill}
                                     </Button>
-                                )}
+                            )}
                         </Box>
                     </Grid>
                     <Grid item xs={12} md={6} lg={6} sx={{display: "flex", justifyContent: "center"}}>
