@@ -59,7 +59,7 @@ const Works: React.FC = () => {
                                         />
                                         <CardContent>
                                         <Typography gutterBottom variant="h5" component="div" sx={{fontWeight: 600}}>
-                                            Hiding and watching Twitter
+                                            Hiding Twitter
                                         </Typography>
                                         <Typography variant="body2" color="text.secondary">
                                             We made an extension. It was a three-person team in a two-day hackthon. I did a backend development that uses Twitter api and flask to pass information to the server.. geekcamp_vol.5 effort award.
@@ -148,7 +148,7 @@ const Works: React.FC = () => {
                                         />
                                         <CardContent>
                                         <Typography gutterBottom variant="h5" component="div" sx={{fontWeight: 600}}>
-                                            The number of people at the Sys Lab
+                                            Departing storehouse
                                         </Typography>
                                         <Typography variant="body2" color="text.secondary">
                                             It took 5 people to create a web application that reads the number of people from the camera to the club room over half a year.Responsible for backend development and deployment.University festival highest award work.

@@ -7,7 +7,10 @@ import CardContent from '@mui/material/CardContent'
 import CardMedia from '@mui/material/CardMedia'
 import Typography from '@mui/material/Typography'
 import { Button, CardActionArea, CardActions } from '@mui/material'
-import p1 from '../styles/assets/HRBrain.jpg'
+import p1 from '../styles/assets/HRBrain.png'
+import p2 from '../styles/assets/nifty.png'
+import p3 from '../styles/assets/sakura.png'
+import p4 from '../styles/assets/askul.png'
 
 const Works: React.FC = () => {
     return (
@@ -21,13 +24,13 @@ const Works: React.FC = () => {
                                 <CardActionArea>
                                     <CardMedia
                                     component="img"
-                                    height='auto'
+                                    height='190'
                                     image={p1}
                                     alt="project 1"
                                     />
                                     <CardContent>
                                     <Typography gutterBottom variant="h5" component="div" sx={{fontWeight: 600}}>
-                                        HRBrain Innovation Ideathon
+                                        HRBrain Internship
                                     </Typography>
                                     <Typography variant="body2" color="text.secondary">
                                         I participated in a two-day ideathon internship.At Ideathon, there was a presentation on the final day and I was able to win the championship.
@@ -37,6 +40,95 @@ const Works: React.FC = () => {
                                 <CardActions>
                                     <Button size="small" sx={{color: '#dda73b'}}>
                                         <Link href="https://talent.supporterz.jp/events/6bd10ab3-cbdc-408a-acd0-63cb00365202/" target="_blank" underline="none" color="inherit">internship
+                                        </Link>
+                                    </Button>
+                                </CardActions>
+                            </Card>
+                            </Box>
+                        </Grid>
+                        <Grid item xs={6} md={4}>
+                            <Box>
+                                <Card sx={{ maxWidth: 345 }}>
+                                    <CardActionArea>
+                                        <CardMedia
+                                        component="img"
+                                        height='190'
+                                        image={p2}
+                                        alt="project 2"
+                                        />
+                                        <CardContent>
+                                        <Typography gutterBottom variant="h5" component="div" sx={{fontWeight: 600}}>
+                                            Nifty Internship
+                                        </Typography>
+                                        <Typography variant="body2" color="text.secondary">
+                                            I participated in an internship at Nifty.
+                                        </Typography>
+                                        </CardContent>
+                                    </CardActionArea>
+                                    <CardActions>
+                                        <Button size="small" sx={{color: '#dda73b'}}>
+                                        <Link href="https://www.nifty.com/" target="_blank" underline="none" color="inherit">HP
+                                        </Link>
+
+                                        </Button>
+                                    </CardActions>
+                                </Card>
+                            </Box>
+                        </Grid>
+                        <Grid item xs={6} md={4}>
+                            <Box>
+                                <Card sx={{ maxWidth: 345 }}>
+                                    <CardActionArea>
+                                        <CardMedia
+                                        component="img"
+                                        height='190'
+                                        image={p3}
+                                        alt="project 3"
+                                        />
+                                        <CardContent>
+                                        <Typography gutterBottom variant="h5" component="div" sx={{fontWeight: 600}}>
+                                            Sakura Internet Internship<br />
+                                        </Typography>
+                                        <Typography variant="body2" color="text.secondary">
+                                            I participated in an internship at Sakura Internet.<br/>
+                                        </Typography>
+                                        </CardContent>
+                                    </CardActionArea>
+                                    <CardActions>
+                                        <Button size="small" sx={{color: '#dda73b'}}>
+                                            <Link href="https://www.infiniteloop.co.jp/tech-blog/2022/06/metaverse-challenge-2022/" target="_blank" underline="none" color="inherit">internship
+                                            </Link>
+                                        </Button>
+                                    </CardActions>
+                                </Card>
+                            </Box>
+                        </Grid>
+                    </Grid>
+        </GlobalBoxWrap>
+        <GlobalBoxWrap sx={{textAlign: "center", marginTop: "1rem", marginBottom: "5rem"}}>
+                    <Grid container alignItems="stretch">
+                        <Grid item xs={6} md={4}>
+                            <Box>
+                            <Card sx={{ maxWidth: 345}}>
+                                <CardActionArea>
+                                    <CardMedia
+                                    component="img"
+                                    height='190'
+                                    image={p4}
+                                    alt="project 1"
+                                    />
+                                    <CardContent>
+                                    <Typography gutterBottom variant="h5" component="div" sx={{fontWeight: 600}}>
+                                        Askul Internship
+                                    </Typography>
+                                    <Typography variant="body2" color="text.secondary">
+                                        I am participating in an internship at Askul.
+                                    </Typography>
+                                    </CardContent>
+                                </CardActionArea>
+                                <CardActions>
+                                    <Button size="small" sx={{color: '#dda73b'}}>
+                                        <Link href="https://www.askul.co.jp/" target="_blank" underline="none" color="inherit">HP
                                         </Link>
                                     </Button>
                                 </CardActions>
@@ -55,10 +147,10 @@ const Works: React.FC = () => {
                                         />
                                         <CardContent>
                                         <Typography gutterBottom variant="h5" component="div" sx={{fontWeight: 600}}>
-                                          The number of people at the Sys Lab
+                                            The number of people at the Sys Lab
                                         </Typography>
                                         <Typography variant="body2" color="text.secondary">
-                                          It took 5 people to create a web application that reads the number of people from the camera to the club room over half a year.Responsible for backend development and deployment.University festival highest award work.
+                                            It took 5 people to create a web application that reads the number of people from the camera to the club room over half a year.Responsible for backend development and deployment.University festival highest award work.
                                         </Typography>
                                         </CardContent>
                                     </CardActionArea>
@@ -84,7 +176,7 @@ const Works: React.FC = () => {
                                         />
                                         <CardContent>
                                         <Typography gutterBottom variant="h5" component="div" sx={{fontWeight: 600}}>
-                                          Online Try On Service<br />
+                                            Online Try On Service<br />
                                         </Typography>
                                         <Typography variant="body2" color="text.secondary">
                                             A service that allows you to change clothes on the Web was created by 5 people over half a year.Responsible for database definition, environment construction, and backend development.Second place work in the lecture.<br/>
@@ -102,39 +194,6 @@ const Works: React.FC = () => {
                         </Grid> */}
                     </Grid>
         </GlobalBoxWrap>
-        {/* <GlobalBoxWrap sx={{textAlign: "center", marginTop: "2rem", marginBottom: "5rem"}}>
-                    <Grid container alignItems="stretch">
-                        <Grid item xs={6} md={4}>
-                            <Box>
-                            <Card sx={{ maxWidth: 345}}>
-                                <CardActionArea>
-                                    <CardMedia
-                                    component="img"
-                                    height='auto'
-                                    image={p4}
-                                    alt="project 1"
-                                    />
-                                    <CardContent>
-                                    <Typography gutterBottom variant="h5" component="div" sx={{fontWeight: 600}}>
-                                        Othello Game
-                                    </Typography>
-                                    <Typography variant="body2" color="text.secondary">
-                                        A web Othello game with Python was created by 6 people over 2 weeks.Responsible for backend development, frontend development and deployment.
-                                    </Typography>
-                                    </CardContent>
-                                </CardActionArea>
-                                <CardActions>
-                                    <Button size="small" sx={{color: '#dda73b'}}>
-                                        <Link href="https://github.com/2021AIT-OOP2-G06/oop2-othello" target="_blank" underline="none" color="inherit">Github Link
-                                        </Link>
-                                    </Button>
-                                </CardActions>
-                            </Card>
-                            </Box>
-                        </Grid>
-
-                    </Grid>
-            </GlobalBoxWrap> */}
         </section>
     )
 }
