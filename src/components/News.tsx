@@ -11,6 +11,7 @@ import p1 from '../styles/assets/HRBrain.png'
 import p2 from '../styles/assets/nifty.png'
 import p3 from '../styles/assets/sakura.png'
 import p4 from '../styles/assets/askul.png'
+import p5 from '../styles/assets/Directorz.jpeg'
 
 const Works: React.FC = () => {
     return (
@@ -33,7 +34,7 @@ const Works: React.FC = () => {
                                         HRBrain Internship
                                     </Typography>
                                     <Typography variant="body2" color="text.secondary">
-                                        I participated in a two-day ideathon internship.At Ideathon, there was a presentation on the final day and I was able to win the championship.
+                                        2days,I participated in a two-day ideathon internship.At Ideathon, there was a presentation on the final day and I was able to win the championship.
                                     </Typography>
                                     </CardContent>
                                 </CardActionArea>
@@ -61,7 +62,7 @@ const Works: React.FC = () => {
                                             Nifty Internship
                                         </Typography>
                                         <Typography variant="body2" color="text.secondary">
-                                            I participated in an internship at Nifty.
+                                            3days I participated in an internship at Nifty.
                                         </Typography>
                                         </CardContent>
                                     </CardActionArea>
@@ -90,7 +91,7 @@ const Works: React.FC = () => {
                                             Sakura Internet Internship<br />
                                         </Typography>
                                         <Typography variant="body2" color="text.secondary">
-                                            I participated in an internship at Sakura Internet.<br/>
+                                            5days,I participated in an internship at Sakura Internet.<br/>
                                         </Typography>
                                         </CardContent>
                                     </CardActionArea>
@@ -115,14 +116,14 @@ const Works: React.FC = () => {
                                     component="img"
                                     height='190'
                                     image={p4}
-                                    alt="project 1"
+                                    alt="project 4"
                                     />
                                     <CardContent>
                                     <Typography gutterBottom variant="h5" component="div" sx={{fontWeight: 600}}>
                                         Askul Internship
                                     </Typography>
                                     <Typography variant="body2" color="text.secondary">
-                                        I am participating in an internship at Askul.
+                                        5days,I participated in an internship at Askul.
                                     </Typography>
                                     </CardContent>
                                 </CardActionArea>
@@ -135,28 +136,28 @@ const Works: React.FC = () => {
                             </Card>
                             </Box>
                         </Grid>
-                        {/* <Grid item xs={6} md={4}>
+                        <Grid item xs={6} md={4}>
                             <Box>
                                 <Card sx={{ maxWidth: 345 }}>
                                     <CardActionArea>
                                         <CardMedia
                                         component="img"
-                                        height='auto'
-                                        image={p2}
-                                        alt="project 2"
+                                        height='190'
+                                        image={p5}
+                                        alt="project 5"
                                         />
                                         <CardContent>
                                         <Typography gutterBottom variant="h5" component="div" sx={{fontWeight: 600}}>
-                                            The number of people at the Sys Lab
+                                            Directorz Internship
                                         </Typography>
                                         <Typography variant="body2" color="text.secondary">
-                                            It took 5 people to create a web application that reads the number of people from the camera to the club room over half a year.Responsible for backend development and deployment.University festival highest award work.
+                                            10days,I participated plan in an internship at Directorz.
                                         </Typography>
                                         </CardContent>
                                     </CardActionArea>
                                     <CardActions>
                                         <Button size="small" sx={{color: '#dda73b'}}>
-                                        <Link href="https://set1.ie.aitech.ac.jp/koukaten2021/" target="_blank" underline="none" color="inherit">Live Demo
+                                        <Link href="https://directorz.co.jp/" target="_blank" underline="none" color="inherit">HP
                                         </Link>
 
                                         </Button>
@@ -164,7 +165,7 @@ const Works: React.FC = () => {
                                 </Card>
                             </Box>
                         </Grid>
-                        <Grid item xs={6} md={4}>
+                        {/* <Grid item xs={6} md={4}>
                             <Box>
                                 <Card sx={{ maxWidth: 345 }}>
                                     <CardActionArea>

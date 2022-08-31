@@ -13,6 +13,8 @@ import p3 from '../styles/assets/ctos.png'
 import p4 from '../styles/assets/othello.png'
 import p5 from '../styles/assets/koukaten.png'
 import p6 from '../styles/assets/portfolio.png'
+import p7 from '../styles/assets/project_b.png'
+import p8 from '../styles/assets/famouse-saying.png'
 
 const Works: React.FC = () => {
     return (
@@ -108,8 +110,8 @@ const Works: React.FC = () => {
                     </Grid>
         </GlobalBoxWrap>
         <GlobalBoxWrap sx={{textAlign: "center", marginTop: "2rem", marginBottom: "5rem"}}>
-                    <Grid container alignItems="stretch">
-                        <Grid item xs={6} md={4}>
+            <Grid container alignItems="stretch">
+                <Grid item xs={6} md={4}>
                             <Box>
                             <Card sx={{ maxWidth: 345}}>
                                 <CardActionArea>
@@ -194,6 +196,95 @@ const Works: React.FC = () => {
                                 </Card>
                             </Box>
                         </Grid>
+                    </Grid>
+            </GlobalBoxWrap>
+                    <GlobalBoxWrap sx={{textAlign: "center", marginTop: "2rem", marginBottom: "5rem"}}>
+                    <Grid container alignItems="stretch">
+                        <Grid item xs={6} md={4}>
+                            <Box>
+                            <Card sx={{ maxWidth: 345}}>
+                                <CardActionArea>
+                                    <CardMedia
+                                    component="img"
+                                    height='190px'
+                                    image={p7}
+                                    alt="project 7"
+                                    />
+                                    <CardContent>
+                                    <Typography gutterBottom variant="h5" component="div" sx={{fontWeight: 600}}>
+                                        Side-scrolling game
+                                    </Typography>
+                                    <Typography variant="body2" color="text.secondary">
+                                        A side-scrolling game was created by 5 people.
+                                    </Typography>
+                                    </CardContent>
+                                </CardActionArea>
+                                <CardActions>
+                                    <Button size="small" sx={{color: '#dda73b'}}>
+                                        <Link href="https://github.com/Tako64tako/project_b" target="_blank" underline="none" color="inherit">Github Link
+                                        </Link>
+                                    </Button>
+                                </CardActions>
+                            </Card>
+                            </Box>
+                        </Grid>
+                        <Grid item xs={6} md={4}>
+                            <Box>
+                                <Card sx={{ maxWidth: 345 }}>
+                                    <CardActionArea>
+                                        <CardMedia
+                                        component="img"
+                                        height='190px'
+                                        image={p8}
+                                        alt="project 8"
+                                        />
+                                        <CardContent>
+                                        <Typography gutterBottom variant="h5" component="div" sx={{fontWeight: 600}}>
+                                            famouse-saying-tako64
+                                        </Typography>
+                                        <Typography variant="body2" color="text.secondary">
+                                            A famous-saying-tako64 was created.
+                                        </Typography>
+                                        </CardContent>
+                                    </CardActionArea>
+                                    <CardActions>
+                                        <Button size="small" sx={{color: '#dda73b'}}>
+                                        <Link href="https://github.com/Tako64tako/famouse-saying-tako64" target="_blank" underline="none" color="inherit">Github Link
+                                        </Link>
+
+                                        </Button>
+                                    </CardActions>
+                                </Card>
+                            </Box>
+                        </Grid>
+                        {/* <Grid item xs={6} md={4}>
+                            <Box>
+                                <Card sx={{ maxWidth: 345 }}>
+                                    <CardActionArea>
+                                        <CardMedia
+                                        component="img"
+                                        height='190px'
+                                        image={p6}
+                                        alt="project 6"
+                                        />
+                                        <CardContent>
+                                        <Typography gutterBottom variant="h5" component="div" sx={{fontWeight: 600}}>
+                                            Portfolio Site
+                                        </Typography>
+                                        <Typography variant="body2" color="text.secondary">
+                                            I made a portfolio site.
+                                        </Typography>
+                                        </CardContent>
+                                    </CardActionArea>
+                                    <CardActions>
+                                        <Button size="small" sx={{color: '#dda73b'}}>
+                                            <Link href="https://github.com/Tako64tako/portfolio-tako" target="_blank" underline="none" color="inherit">GITHUB LINK
+                                            </Link>
+                                        </Button>
+                                    </CardActions>
+                                </Card>
+                            </Box>
+                        </Grid> */}
                     </Grid>
             </GlobalBoxWrap>
         </section>
