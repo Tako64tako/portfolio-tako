@@ -15,6 +15,7 @@ import p5 from '../styles/assets/koukaten.png'
 import p6 from '../styles/assets/portfolio.png'
 import p7 from '../styles/assets/project_b.png'
 import p8 from '../styles/assets/famouse-saying.png'
+import p9 from '../styles/assets/Leafony.jpg'
 
 const Works: React.FC = () => {
     return (
@@ -43,8 +44,10 @@ const Works: React.FC = () => {
                                 </CardActionArea>
                                 <CardActions>
                                     <Button size="small" sx={{color: '#dda73b'}}>
-                                        <Link href="http://opc3.qqey.net/" target="_blank" underline="none" color="inherit">LIVE DEMO
-                                        </Link>
+                                        <Link href="http://opc3.qqey.net/" target="_blank" underline="none" color="inherit">LIVE DEMO</Link>
+                                    </Button>
+                                    <Button size="small" sx={{color: '#dda73b'}}>
+                                        <Link href="https://www.youtube.com/watch?v=aXrKhL0umm0" target="_blank" underline="none" color="inherit">YOUTUBE LINK</Link>
                                     </Button>
                                 </CardActions>
                             </Card>
@@ -70,11 +73,12 @@ const Works: React.FC = () => {
                                         </CardContent>
                                     </CardActionArea>
                                     <CardActions>
-                                        <Button size="small" sx={{color: '#dda73b'}}>
-                                        <Link href="https://set1.ie.aitech.ac.jp/koukaten2021/" target="_blank" underline="none" color="inherit">Live Demo
-                                        </Link>
-
-                                        </Button>
+                                    <Button size="small" sx={{color: '#dda73b'}}>
+                                        <Link href="https://set1.ie.aitech.ac.jp/koukaten2021/" target="_blank" underline="none" color="inherit">Live Demo</Link>
+                                    </Button>
+                                    <Button size="small" sx={{color: '#dda73b'}}>
+                                        <Link href="https://www.youtube.com/watch?v=UquZ9PCCMA8" target="_blank" underline="none" color="inherit">YOUTUBE LINK</Link>
+                                    </Button>
                                     </CardActions>
                                 </Card>
                             </Box>
@@ -257,34 +261,34 @@ const Works: React.FC = () => {
                                 </Card>
                             </Box>
                         </Grid>
-                        {/* <Grid item xs={6} md={4}>
+                        <Grid item xs={6} md={4}>
                             <Box>
                                 <Card sx={{ maxWidth: 345 }}>
                                     <CardActionArea>
                                         <CardMedia
                                         component="img"
                                         height='190px'
-                                        image={p6}
-                                        alt="project 6"
+                                        image={p9}
+                                        alt="project 9"
                                         />
                                         <CardContent>
                                         <Typography gutterBottom variant="h5" component="div" sx={{fontWeight: 600}}>
-                                            Portfolio Site
+                                            Anyone can feed
                                         </Typography>
                                         <Typography variant="body2" color="text.secondary">
-                                            I made a portfolio site.
+                                            I made a Anyone can feed.
                                         </Typography>
                                         </CardContent>
                                     </CardActionArea>
                                     <CardActions>
                                         <Button size="small" sx={{color: '#dda73b'}}>
-                                            <Link href="https://github.com/Tako64tako/portfolio-tako" target="_blank" underline="none" color="inherit">GITHUB LINK
+                                            <Link href="https://github.com/Pluslab/2022_leafony_A" target="_blank" underline="none" color="inherit">GITHUB LINK
                                             </Link>
                                         </Button>
                                     </CardActions>
                                 </Card>
                             </Box>
-                        </Grid> */}
+                        </Grid>
                     </Grid>
             </GlobalBoxWrap>
         </section>

@@ -42,11 +42,13 @@ const About: React.FC = () => {
                                         <Link href="https://pluslab.org/" underline="none" target="_blank" color="inherit"  sx={{'&:hover': {
                                             backgroundColor: "rgba(221,167,59,0.2)",
                                             borderColor: "#dda73b"
-                                        }}}>Laboratory : pluslab <NetworkWifiIcon></NetworkWifiIcon></Link><br />
-                                      Birthday : 2001/10/18<CakeIcon></CakeIcon><br />
-                                      Birthplace : Nara prefecture<MapsHomeWorkIcon></MapsHomeWorkIcon><br />
-                                      Hobbies : Programming<ComputerIcon></ComputerIcon>Reading< MenuBookIcon></ MenuBookIcon><br />
-                                      Special skill : Basketball<SportsBasketballIcon></SportsBasketballIcon> <br />
+                                    }
+                                    }}>
+                                    Laboratory : pluslab <NetworkWifiIcon></NetworkWifiIcon></Link><br />
+                                    Birthday : 2001/10/18<CakeIcon></CakeIcon><br />
+                                    Birthplace : Nara prefecture<MapsHomeWorkIcon></MapsHomeWorkIcon><br />
+                                    Hobbies : Programming<ComputerIcon></ComputerIcon>Reading< MenuBookIcon></ MenuBookIcon><br />
+                                    Special skill : Basketball<SportsBasketballIcon></SportsBasketballIcon> <br />
                                     </Typography>
                                 </Box>
                                 {/* <Box marginTop="2rem">
