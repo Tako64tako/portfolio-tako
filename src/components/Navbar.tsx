@@ -3,7 +3,7 @@ import Toolbar from '@mui/material/Toolbar'
 import { styled } from "@mui/system"
 import { Button } from "@mui/material"
 import MediaQuery from "react-responsive";
-import { slide as Menu } from 'react-burger-menu'
+import { push as Menu } from 'react-burger-menu'
 import './styles/style.css'
 import Thema from '../thema/SampleTemplate';
 
@@ -36,20 +36,24 @@ const Navbar:React.FC<NavbarProps> = ({home, about, projects, skills, contact,ne
   return (
         <Toolbar
         sx={{
-          justifyContent: "center"
-        }}
+          "@media (min-width: 594px)": {
+            justifyContent: "center",
+        },
+  }}
     >
-          <MediaQuery query="(min-width: 594px)" >
+      <MediaQuery query="(min-width: 594px)">
+        {/* <Menu> */}
             <NavbarButton>Home</NavbarButton>
             <NavbarButton onClick={scrollAbout}>About</NavbarButton>
             <NavbarButton onClick={scrollSkills}>Skills</NavbarButton>
             <NavbarButton onClick={scrollProjects}>Projects</NavbarButton>
             <NavbarButton onClick={scrollNews}>News</NavbarButton>
             <NavbarButton onClick={scrollContact}>Contact</NavbarButton>
-            {/* <Thema></Thema> */}
+          {/* <Thema></Thema> */}
+          {/* </Menu> */}
         </MediaQuery>
         <MediaQuery query="(max-width: 593px)">
-          <Menu>
+          <Menu >
             <NavbarButton>Home</NavbarButton>
             <NavbarButton onClick={scrollAbout}>About</NavbarButton>
             <NavbarButton onClick={scrollSkills}>Skills</NavbarButton>
