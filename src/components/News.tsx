@@ -12,6 +12,8 @@ import p2 from '../styles/assets/nifty.png'
 import p3 from '../styles/assets/sakura.png'
 import p4 from '../styles/assets/askul.png'
 import p5 from '../styles/assets/Directorz.jpeg'
+import p6 from "../styles/assets/topica.jpeg"
+import p7 from "../styles/assets/masuya.jpeg"
 
 const Works: React.FC = () => {
     return (
@@ -165,28 +167,117 @@ const Works: React.FC = () => {
                                 </Card>
                             </Box>
                         </Grid>
+                        <Grid item xs={6} md={4}>
+                            <Box>
+                                <Card sx={{ maxWidth: 345 }}>
+                                    <CardActionArea>
+                                        <CardMedia
+                                        component="img"
+                                        height='190'
+                                        image={p6}
+                                        alt="project 6"
+                                        />
+                                        <CardContent>
+                                        <Typography gutterBottom variant="h5" component="div" sx={{fontWeight: 600}}>
+                                            TOPICA<br />
+                                        </Typography>
+                                        <Typography variant="body2" color="text.secondary">
+                                            3 months intern<br/>
+                                        </Typography>
+                                        </CardContent>
+                                    </CardActionArea>
+                                    <CardActions>
+                                        <Button size="small" sx={{color: '#dda73b'}}>
+                                            <Link href="https://topica.co.jp/" target="_blank" underline="none" color="inherit">HP
+                                            </Link>
+                                        </Button>
+                                    </CardActions>
+                                </Card>
+                            </Box>
+                        </Grid>
+                    </Grid>
+            </GlobalBoxWrap>
+            <GlobalBoxWrap sx={{textAlign: "center", marginTop: "1rem", marginBottom: "5rem"}}>
+                    <Grid container alignItems="stretch">
+                        <Grid item xs={6} md={4}>
+                            <Box>
+                            <Card sx={{ maxWidth: 345}}>
+                                <CardActionArea>
+                                    <CardMedia
+                                    component="img"
+                                    height='190'
+                                    image={p7}
+                                    alt="project 7"
+                                    />
+                                    <CardContent>
+                                    <Typography gutterBottom variant="h5" component="div" sx={{fontWeight: 600}}>
+                                        masuya Internship
+                                    </Typography>
+                                    <Typography variant="body2" color="text.secondary">
+                                        internship at masuya.
+                                    </Typography>
+                                    </CardContent>
+                                </CardActionArea>
+                                <CardActions>
+                                    <Button size="small" sx={{color: '#dda73b'}}>
+                                        <Link href="https://www.askul.co.jp/" target="_blank" underline="none" color="inherit">HP
+                                        </Link>
+                                    </Button>
+                                </CardActions>
+                            </Card>
+                            </Box>
+                        </Grid>
                         {/* <Grid item xs={6} md={4}>
                             <Box>
                                 <Card sx={{ maxWidth: 345 }}>
                                     <CardActionArea>
                                         <CardMedia
                                         component="img"
-                                        height='auto'
-                                        image={p3}
-                                        alt="project 3"
+                                        height='190'
+                                        image={p5}
+                                        alt="project 5"
                                         />
                                         <CardContent>
                                         <Typography gutterBottom variant="h5" component="div" sx={{fontWeight: 600}}>
-                                            Online Try On Service<br />
+                                            Directorz Internship
                                         </Typography>
                                         <Typography variant="body2" color="text.secondary">
-                                            A service that allows you to change clothes on the Web was created by 5 people over half a year.Responsible for database definition, environment construction, and backend development.Second place work in the lecture.<br/>
+                                            10days,I participated plan in an internship at Directorz.
                                         </Typography>
                                         </CardContent>
                                     </CardActionArea>
                                     <CardActions>
                                         <Button size="small" sx={{color: '#dda73b'}}>
-                                            <Link href="https://github.com/Tako64tako/CTOs" target="_blank" underline="none" color="inherit">GITHUB LINK
+                                        <Link href="https://directorz.co.jp/" target="_blank" underline="none" color="inherit">HP
+                                        </Link>
+
+                                        </Button>
+                                    </CardActions>
+                                </Card>
+                            </Box>
+                        </Grid>
+                        <Grid item xs={6} md={4}>
+                            <Box>
+                                <Card sx={{ maxWidth: 345 }}>
+                                    <CardActionArea>
+                                        <CardMedia
+                                        component="img"
+                                        height='190'
+                                        image={p6}
+                                        alt="project 6"
+                                        />
+                                        <CardContent>
+                                        <Typography gutterBottom variant="h5" component="div" sx={{fontWeight: 600}}>
+                                            TOPICA<br />
+                                        </Typography>
+                                        <Typography variant="body2" color="text.secondary">
+                                            3 months intern<br/>
+                                        </Typography>
+                                        </CardContent>
+                                    </CardActionArea>
+                                    <CardActions>
+                                        <Button size="small" sx={{color: '#dda73b'}}>
+                                            <Link href="https://topica.co.jp/" target="_blank" underline="none" color="inherit">HP
                                             </Link>
                                         </Button>
                                     </CardActions>
