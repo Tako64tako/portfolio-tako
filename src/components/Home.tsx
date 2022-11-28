@@ -35,7 +35,7 @@ const Home: React.FC = () => {
         <section>
                 {/* <HomeBackgroundImage> */}
                 <section>
-          <Navbar home={myHome} about={myAbout} projects={myProjects} skills={mySkills} news={ myNews } contact={myContact} />
+        <Navbar home={myHome} about={myAbout} projects={myProjects} skills={mySkills} news={ myNews } contact={myContact} />
                 </section>
                         <Container ref={myHome}>
                             <GlobalBoxWrap marginTop={10}>
