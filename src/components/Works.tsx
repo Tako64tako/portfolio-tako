@@ -20,9 +20,9 @@ import p9 from '../styles/assets/Leafony.jpg'
 const Works: React.FC = () => {
     return (
         <section>
-            <GlobalBoxWrap sx={{textAlign: "center", marginTop: "10rem", marginBottom: "5rem"}}>
+            <GlobalBoxWrap sx={{textAlign: "center", marginTop: "10rem", marginBottom: "1rem"}}>
                 <GlobalSubTitle>Projects</GlobalSubTitle>
-                    <Grid container alignItems="stretch">
+                    <Grid container alignItems="stretch" spacing={2}>
                         <Grid item xs={6} md={4}>
                             <Box>
                             <Card sx={{ maxWidth: 345}}>
@@ -37,8 +37,12 @@ const Works: React.FC = () => {
                                     <Typography gutterBottom variant="h5" component="div" sx={{fontWeight: 600}}>
                                         Can be seen by people
                                     </Typography>
-                                    <Typography variant="body2" color="text.secondary">
-                                        Creation of mobile apps and web apps that detect the number of people in a room with Ibeacon.It was a three-person team in a two-day hackthon.I am in charge of sending and receiving Ibeacon, registering data in Firebase, and developing the backend.geekcamp_vol.3 effort award.
+                                    <Typography variant="body2" color="text.secondary" textAlign={"left"}>
+                                        <b>Overview:</b> In the student group circle, it is necessary to submit to the school whether "who", "when", and "how many times" were staying in the club room when a person who tested positive for COVID-19 appeared. We developed a service to automate it because it was troublesome to set and manage it.<br />
+                                        <b>Development period:</b> 2 days<br />
+                                        <b>Developers:</b> 3 people<br />
+                                        <b>Technology used:</b> RaspberryPi, Next.js, Python, Kotlin, FireBase, C <br/>
+                                        <b>Role:</b> Planning, backend development, deployment
                                     </Typography>
                                     </CardContent>
                                 </CardActionArea>
@@ -67,9 +71,13 @@ const Works: React.FC = () => {
                                         <Typography gutterBottom variant="h5" component="div" sx={{fontWeight: 600}}>
                                             Hiding Twitter
                                         </Typography>
-                                        <Typography variant="body2" color="text.secondary">
-                                            We made an extension. It was a three-person team in a two-day hackthon. I did a backend development that uses Twitter api and flask to pass information to the server.. geekcamp_vol.5 effort award.
-                                        </Typography>
+                                    <Typography variant="body2" color="text.secondary" textAlign={"left"}>
+                                        <b>Overview:</b> I wanted to make it look like I was working without knowing that I was watching Twitter during lectures and work.<br />
+                                        <b>Development period:</b> 2 days<br />
+                                        <b>Developers:</b> 3 people<br />
+                                        <b>Technology used:</b> TypeScript, Python<br/>
+                                        <b>Role:</b> backend
+                                    </Typography>
                                         </CardContent>
                                     </CardActionArea>
                                     <CardActions>
@@ -97,8 +105,12 @@ const Works: React.FC = () => {
                                         <Typography gutterBottom variant="h5" component="div" sx={{fontWeight: 600}}>
                                             Online Try On Service<br />
                                         </Typography>
-                                        <Typography variant="body2" color="text.secondary">
-                                            A service that allows you to change clothes on the Web was created by 5 people over half a year.Responsible for database definition, environment construction, and backend development.Second place work in the lecture.<br/>
+                                        <Typography variant="body2" color="text.secondary" textAlign={"left"}>
+                                            <b>Overview:</b> We developed a web application that allows you to try on clothes online. <br />
+                                            <b>Development period:</b> 6 months<br />
+                                            <b>Developers:</b> 5 people<br />
+                                            <b>Technology used:</b> Python(Django), PostgreSQL, Docker<br />
+                                            <b>Role:</b> Team leader, planning, environment construction, database definition, backend development
                                         </Typography>
                                         </CardContent>
                                     </CardActionArea>
@@ -110,12 +122,8 @@ const Works: React.FC = () => {
                                     </CardActions>
                                 </Card>
                             </Box>
-                        </Grid>
                     </Grid>
-        </GlobalBoxWrap>
-        <GlobalBoxWrap sx={{textAlign: "center", marginTop: "2rem", marginBottom: "5rem"}}>
-            <Grid container alignItems="stretch">
-                <Grid item xs={6} md={4}>
+<Grid item xs={6} md={4}>
                             <Box>
                             <Card sx={{ maxWidth: 345}}>
                                 <CardActionArea>
@@ -129,8 +137,12 @@ const Works: React.FC = () => {
                                     <Typography gutterBottom variant="h5" component="div" sx={{fontWeight: 600}}>
                                         Othello Game
                                     </Typography>
-                                    <Typography variant="body2" color="text.secondary">
-                                        A web Othello game with Python was created by 6 people over 2 weeks.Responsible for backend development, frontend development and deployment.
+                                    <Typography variant="body2" color="text.secondary" textAlign={"left"}>
+                                        <b>Overview:</b> Experience team development using Python in a lecture.<br />
+                                        <b>Development period:</b> 2 weeks<br />
+                                        <b>Developers:</b> 6 people<br />
+                                        <b>Technology used:</b> Python<br/>
+                                        <b>Role:</b> All
                                     </Typography>
                                     </CardContent>
                                 </CardActionArea>
@@ -157,8 +169,12 @@ const Works: React.FC = () => {
                                         <Typography gutterBottom variant="h5" component="div" sx={{fontWeight: 600}}>
                                             Departing storehouse
                                         </Typography>
-                                        <Typography variant="body2" color="text.secondary">
-                                            It took 5 people to create a web application that reads the number of people from the camera to the club room over half a year.Responsible for backend development and deployment.University festival highest award work.
+                                        <Typography variant="body2" color="text.secondary" textAlign={"left"}>
+                                            <b>Overview:</b> I developed it because I wanted to know if the club room was crowded due to the corona crisis and how many people there were.<br />
+                                            <b>Development period:</b> 6 months<br />
+                                            <b>Developers:</b> 5 people<br />
+                                            <b>Technology used:</b> Vue, Go, Python, MySQL<br />
+                                            <b>Role:</b> Planning, backend development, deployment
                                         </Typography>
                                         </CardContent>
                                     </CardActionArea>
@@ -186,8 +202,12 @@ const Works: React.FC = () => {
                                         <Typography gutterBottom variant="h5" component="div" sx={{fontWeight: 600}}>
                                             Portfolio Site
                                         </Typography>
-                                        <Typography variant="body2" color="text.secondary">
-                                            I made a portfolio site.
+                                        <Typography variant="body2" color="text.secondary" textAlign={"left"}>
+                                            <b>Overview:</b> Job hunting may begin, and I thought that creating a portfolio site would allow me to convey my<br />
+                                            <b>Development period:</b> 1 months<br />
+                                            <b>Developers:</b> 1 person<br />
+                                            <b>Technology used:</b> React, TypeScript<br />
+                                            <b>Role:</b> All
                                         </Typography>
                                         </CardContent>
                                     </CardActionArea>
@@ -199,12 +219,8 @@ const Works: React.FC = () => {
                                     </CardActions>
                                 </Card>
                             </Box>
-                        </Grid>
                     </Grid>
-            </GlobalBoxWrap>
-                    <GlobalBoxWrap sx={{textAlign: "center", marginTop: "2rem", marginBottom: "5rem"}}>
-                    <Grid container alignItems="stretch">
-                        <Grid item xs={6} md={4}>
+                    <Grid item xs={6} md={4}>
                             <Box>
                             <Card sx={{ maxWidth: 345}}>
                                 <CardActionArea>
@@ -218,8 +234,12 @@ const Works: React.FC = () => {
                                     <Typography gutterBottom variant="h5" component="div" sx={{fontWeight: 600}}>
                                         Side-scrolling game
                                     </Typography>
-                                    <Typography variant="body2" color="text.secondary">
-                                        A side-scrolling game was created by 5 people.
+                                    <Typography variant="body2" color="text.secondary" textAlign={"left"}>
+                                        <b>Overview:</b> Experienced team development for the task of creating a lecture web application.<br />
+                                        <b>Development period:</b> 2 monsths<br />
+                                        <b>Developers:</b> 4 people<br />
+                                        <b>Technology used:</b>JavaScript<br />
+                                        <b>Role:</b> All
                                     </Typography>
                                     </CardContent>
                                 </CardActionArea>
@@ -246,9 +266,13 @@ const Works: React.FC = () => {
                                         <Typography gutterBottom variant="h5" component="div" sx={{fontWeight: 600}}>
                                             famouse-saying-tako64
                                         </Typography>
-                                        <Typography variant="body2" color="text.secondary">
-                                            A famous-saying-tako64 was created.
-                                        </Typography>
+                                    <Typography variant="body2" color="text.secondary" textAlign={"left"}>
+                                        <b>Overview:</b> I wanted to create an extension.<br />
+                                        <b>Development period:</b> 2 days<br />
+                                        <b>Developers:</b> 1 person<br />
+                                        <b>Technology used:</b>TypeScript<br />
+                                        <b>Role:</b> All
+                                    </Typography>
                                         </CardContent>
                                     </CardActionArea>
                                     <CardActions>
@@ -275,9 +299,13 @@ const Works: React.FC = () => {
                                         <Typography gutterBottom variant="h5" component="div" sx={{fontWeight: 600}}>
                                             Anyone can feed
                                         </Typography>
-                                        <Typography variant="body2" color="text.secondary">
-                                            I made a Anyone can feed.
-                                        </Typography>
+                                    <Typography variant="body2" color="text.secondary" textAlign={"left"}>
+                                        <b>Overview:</b> Development using a microcomputer called Leafony by members of the laboratory.<br />
+                                        <b>Development period:</b> 2 months<br />
+                                        <b>Developers:</b> 3 people<br />
+                                        <b>Technology used:</b>TypeScript, React-Native, Python, C++ , Leafony, RaspberyyPi <br />
+                                        <b>Role:</b> React-Native, TypeScript , Leafony
+                                    </Typography>
                                         </CardContent>
                                     </CardActionArea>
                                     <CardActions>
@@ -290,7 +318,7 @@ const Works: React.FC = () => {
                             </Box>
                         </Grid>
                     </Grid>
-            </GlobalBoxWrap>
+        </GlobalBoxWrap>
         </section>
     )
 }

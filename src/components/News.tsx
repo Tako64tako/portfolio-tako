@@ -20,7 +20,7 @@ const Works: React.FC = () => {
         <section>
             <GlobalBoxWrap sx={{textAlign: "center", marginTop: "1rem", marginBottom: "5rem"}}>
                 <GlobalSubTitle>News</GlobalSubTitle>
-                    <Grid container alignItems="stretch">
+                    <Grid container alignItems="stretch" spacing={2}>
                         <Grid item xs={6} md={4}>
                             <Box>
                             <Card sx={{ maxWidth: 345}}>
@@ -35,8 +35,10 @@ const Works: React.FC = () => {
                                     <Typography gutterBottom variant="h5" component="div" sx={{fontWeight: 600}}>
                                         HRBrain Internship
                                     </Typography>
-                                    <Typography variant="body2" color="text.secondary">
-                                        2days,I participated in a two-day ideathon internship.At Ideathon, there was a presentation on the final day and I was able to win the championship.
+                                    <Typography variant="body2" color="text.secondary" textAlign={"left"}>
+                                        <b>Period:</b> 2 days<br />
+                                        <b>Developers:</b> 4 people<br />
+                                        <b>Content:</b> I was able to come up with a service to solve HR problems at the Ideathon and was able to win.<br />
                                     </Typography>
                                     </CardContent>
                                 </CardActionArea>
@@ -63,9 +65,11 @@ const Works: React.FC = () => {
                                         <Typography gutterBottom variant="h5" component="div" sx={{fontWeight: 600}}>
                                             Nifty Internship
                                         </Typography>
-                                        <Typography variant="body2" color="text.secondary">
-                                            3days I participated in an internship at Nifty.
-                                        </Typography>
+                                    <Typography variant="body2" color="text.secondary" textAlign={"left"}>
+                                        <b>Period:</b> 3 days<br />
+                                        <b>Developers:</b> 4 people<br />
+                                        <b>Content:</b> I participated in an internship where I was asked to improve the existing HP using Scrum.I acted as the PO and made the final decision within the team.<br />
+                                    </Typography>
                                         </CardContent>
                                     </CardActionArea>
                                     <CardActions>
@@ -92,9 +96,11 @@ const Works: React.FC = () => {
                                         <Typography gutterBottom variant="h5" component="div" sx={{fontWeight: 600}}>
                                             Sakura Internet Internship<br />
                                         </Typography>
-                                        <Typography variant="body2" color="text.secondary">
-                                            5days,I participated in an internship at Sakura Internet.<br/>
-                                        </Typography>
+                                    <Typography variant="body2" color="text.secondary" textAlign={"left"}>
+                                        <b>Period:</b> 1 week<br />
+                                        <b>Developers:</b> 3 people<br />
+                                        <b>Content:</b> I built a server environment for running Mozilla Hubs using Sakura's cloud infrastructure, and won the highest award.<br />
+                                    </Typography>
                                         </CardContent>
                                     </CardActionArea>
                                     <CardActions>
@@ -105,12 +111,8 @@ const Works: React.FC = () => {
                                     </CardActions>
                                 </Card>
                             </Box>
-                        </Grid>
                     </Grid>
-        </GlobalBoxWrap>
-        <GlobalBoxWrap sx={{textAlign: "center", marginTop: "1rem", marginBottom: "5rem"}}>
-                    <Grid container alignItems="stretch">
-                        <Grid item xs={6} md={4}>
+                    <Grid item xs={6} md={4}>
                             <Box>
                             <Card sx={{ maxWidth: 345}}>
                                 <CardActionArea>
@@ -124,8 +126,10 @@ const Works: React.FC = () => {
                                     <Typography gutterBottom variant="h5" component="div" sx={{fontWeight: 600}}>
                                         Askul Internship
                                     </Typography>
-                                    <Typography variant="body2" color="text.secondary">
-                                        5days,I participated in an internship at Askul.
+                                    <Typography variant="body2" color="text.secondary" textAlign={"left"}>
+                                        <b>Period:</b> 1 week<br />
+                                        <b>Developers:</b> 5 people<br />
+                                        <b>Content:</b> I participated in an internship where a team worked on issues given to an existing system using TypeScript/Nuxt/Kotlin.<br />
                                     </Typography>
                                     </CardContent>
                                 </CardActionArea>
@@ -152,9 +156,11 @@ const Works: React.FC = () => {
                                         <Typography gutterBottom variant="h5" component="div" sx={{fontWeight: 600}}>
                                             Directorz Internship
                                         </Typography>
-                                        <Typography variant="body2" color="text.secondary">
-                                            10days,I participated plan in an internship at Directorz.
-                                        </Typography>
+                                    <Typography variant="body2" color="text.secondary" textAlign={"left"}>
+                                        <b>Period:</b> 2 week<br />
+                                        <b>Developers:</b> 3 people<br />
+                                        <b>Content:</b> I operated and maintained an existing server using AWS and set up a new server.<br />
+                                    </Typography>
                                         </CardContent>
                                     </CardActionArea>
                                     <CardActions>
@@ -181,9 +187,11 @@ const Works: React.FC = () => {
                                         <Typography gutterBottom variant="h5" component="div" sx={{fontWeight: 600}}>
                                             TOPICA<br />
                                         </Typography>
-                                        <Typography variant="body2" color="text.secondary">
-                                            3 months intern<br/>
-                                        </Typography>
+                                    <Typography variant="body2" color="text.secondary" textAlign={"left"}>
+                                        <b>Period:</b> 3 months<br />
+                                        <b>Developers:</b> 1 person<br />
+                                        <b>Content:</b> Production of LP using STDIO.<br />
+                                    </Typography>
                                         </CardContent>
                                     </CardActionArea>
                                     <CardActions>
@@ -194,12 +202,8 @@ const Works: React.FC = () => {
                                     </CardActions>
                                 </Card>
                             </Box>
-                        </Grid>
                     </Grid>
-            </GlobalBoxWrap>
-            <GlobalBoxWrap sx={{textAlign: "center", marginTop: "1rem", marginBottom: "5rem"}}>
-                    <Grid container alignItems="stretch">
-                        <Grid item xs={6} md={4}>
+                    <Grid item xs={6} md={4}>
                             <Box>
                             <Card sx={{ maxWidth: 345}}>
                                 <CardActionArea>
@@ -213,8 +217,10 @@ const Works: React.FC = () => {
                                     <Typography gutterBottom variant="h5" component="div" sx={{fontWeight: 600}}>
                                         masuya Internship
                                     </Typography>
-                                    <Typography variant="body2" color="text.secondary">
-                                        internship at masuya.
+                                    <Typography variant="body2" color="text.secondary" textAlign={"left"}>
+                                        <b>Period:</b> 6 months<br />
+                                        <b>Developers:</b> 1 person<br />
+                                        <b>Content:</b> Engaged in systemization promotion work.<br />
                                     </Typography>
                                     </CardContent>
                                 </CardActionArea>
@@ -227,63 +233,6 @@ const Works: React.FC = () => {
                             </Card>
                             </Box>
                         </Grid>
-                        {/* <Grid item xs={6} md={4}>
-                            <Box>
-                                <Card sx={{ maxWidth: 345 }}>
-                                    <CardActionArea>
-                                        <CardMedia
-                                        component="img"
-                                        height='190'
-                                        image={p5}
-                                        alt="project 5"
-                                        />
-                                        <CardContent>
-                                        <Typography gutterBottom variant="h5" component="div" sx={{fontWeight: 600}}>
-                                            Directorz Internship
-                                        </Typography>
-                                        <Typography variant="body2" color="text.secondary">
-                                            10days,I participated plan in an internship at Directorz.
-                                        </Typography>
-                                        </CardContent>
-                                    </CardActionArea>
-                                    <CardActions>
-                                        <Button size="small" sx={{color: '#dda73b'}}>
-                                        <Link href="https://directorz.co.jp/" target="_blank" underline="none" color="inherit">HP
-                                        </Link>
-
-                                        </Button>
-                                    </CardActions>
-                                </Card>
-                            </Box>
-                        </Grid>
-                        <Grid item xs={6} md={4}>
-                            <Box>
-                                <Card sx={{ maxWidth: 345 }}>
-                                    <CardActionArea>
-                                        <CardMedia
-                                        component="img"
-                                        height='190'
-                                        image={p6}
-                                        alt="project 6"
-                                        />
-                                        <CardContent>
-                                        <Typography gutterBottom variant="h5" component="div" sx={{fontWeight: 600}}>
-                                            TOPICA<br />
-                                        </Typography>
-                                        <Typography variant="body2" color="text.secondary">
-                                            3 months intern<br/>
-                                        </Typography>
-                                        </CardContent>
-                                    </CardActionArea>
-                                    <CardActions>
-                                        <Button size="small" sx={{color: '#dda73b'}}>
-                                            <Link href="https://topica.co.jp/" target="_blank" underline="none" color="inherit">HP
-                                            </Link>
-                                        </Button>
-                                    </CardActions>
-                                </Card>
-                            </Box>
-                        </Grid> */}
                     </Grid>
         </GlobalBoxWrap>
         </section>
