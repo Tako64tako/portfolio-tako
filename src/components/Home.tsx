@@ -100,7 +100,7 @@ const Home: React.FC = () => {
                                         <Box component="img" alt="portfolio picture" src={ProfileImage}
                                         sx={{
                                             width: "auto",
-                                            height: "75%",
+                                            height: "70%",
                                             borderRadius: "80%",
                                             // boxShadow: "0 0 0 1.2rem rgb(198,198,198, 0.6), 0 0 0 2.4rem rgb(218,218,219, 0.5)"
                                         }}

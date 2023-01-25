@@ -16,6 +16,7 @@ import p6 from '../styles/assets/portfolio.png'
 import p7 from '../styles/assets/project_b.png'
 import p8 from '../styles/assets/famouse-saying.png'
 import p9 from '../styles/assets/Leafony.jpg'
+import p10 from '../styles/assets/python-hands-on.png'
 
 const Works: React.FC = () => {
     return (
@@ -123,7 +124,7 @@ const Works: React.FC = () => {
                                 </Card>
                             </Box>
                     </Grid>
-<Grid item xs={6} md={4}>
+                    <Grid item xs={6} md={4}>
                             <Box>
                             <Card sx={{ maxWidth: 345}}>
                                 <CardActionArea>
@@ -311,6 +312,38 @@ const Works: React.FC = () => {
                                     <CardActions>
                                         <Button size="small" sx={{color: '#dda73b'}}>
                                             <Link href="https://github.com/Pluslab/2022_leafony_A" target="_blank" underline="none" color="inherit">GITHUB LINK
+                                            </Link>
+                                        </Button>
+                                    </CardActions>
+                                </Card>
+                            </Box>
+                    </Grid>
+                    <Grid item xs={6} md={4}>
+                            <Box>
+                                <Card sx={{ maxWidth: 345 }}>
+                                    <CardActionArea>
+                                        <CardMedia
+                                        component="img"
+                                        height='190px'
+                                        image={p10}
+                                        alt="project 10"
+                                        />
+                                        <CardContent>
+                                        <Typography gutterBottom variant="h5" component="div" sx={{fontWeight: 600}}>
+                                            Python-Hands-on
+                                        </Typography>
+                                    <Typography variant="body2" color="text.secondary" textAlign={"left"}>
+                                        <b>Overview:</b> A learning support service that allows you to learn Python hands-on.<br />
+                                        <b>Development period:</b> 2 days<br />
+                                        <b>Developers:</b> 2 people<br />
+                                        <b>Technology used:</b>Python <br />
+                                        <b>Role:</b> Python
+                                    </Typography>
+                                        </CardContent>
+                                    </CardActionArea>
+                                    <CardActions>
+                                        <Button size="small" sx={{color: '#dda73b'}}>
+                                            <Link href="https://github.com/Tako64tako/Python-handson" target="_blank" underline="none" color="inherit">GITHUB LINK
                                             </Link>
                                         </Button>
                                     </CardActions>

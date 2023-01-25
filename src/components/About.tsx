@@ -11,6 +11,7 @@ import MapsHomeWorkIcon from '@mui/icons-material/MapsHomeWork';
 import CakeIcon from '@mui/icons-material/Cake';
 import NetworkWifiIcon from '@mui/icons-material/NetworkWifi';
 import SchoolIcon from '@mui/icons-material/School';
+import LiveTvIcon from '@mui/icons-material/LiveTv';
 // import Resume from '../styles/Hoge.pdf'
 
 const About: React.FC = () => {
@@ -38,13 +39,18 @@ const About: React.FC = () => {
                                         <Link href="https://www.ait.ac.jp/" underline="none" target="_blank" color="inherit" sx={{'&:hover': {
                                             backgroundColor: "rgba(221,167,59,0.2)",
                                             borderColor: "#dda73b"
-                                        }}}>Work : Aichi Institute of Technology student<SchoolIcon></SchoolIcon></Link><br />
+                                    }
+                                    }}>Work : Aichi Institute of Technology student<SchoolIcon></SchoolIcon></Link><br />
+                                        <Link href="https://www.cyberagent.co.jp//" underline="none" target="_blank" color="inherit" sx={{'&:hover': {
+                                            backgroundColor: "rgba(221,167,59,0.2)",
+                                            borderColor: "#dda73b"
+                                        }}}>Unofficial offer : CyberAgent<LiveTvIcon></LiveTvIcon></Link><br />
                                         <Link href="https://pluslab.org/" underline="none" target="_blank" color="inherit"  sx={{'&:hover': {
                                             backgroundColor: "rgba(221,167,59,0.2)",
                                             borderColor: "#dda73b"
                                     }
                                     }}>
-                                    Laboratory : pluslab <NetworkWifiIcon></NetworkWifiIcon></Link><br />
+                                        Laboratory : pluslab <NetworkWifiIcon></NetworkWifiIcon></Link><br />
                                     Birthday : 2001/10/18<CakeIcon></CakeIcon><br />
                                     Birthplace : Nara prefecture<MapsHomeWorkIcon></MapsHomeWorkIcon><br />
                                     Hobbies : Programming<ComputerIcon></ComputerIcon>Reading< MenuBookIcon></ MenuBookIcon><br />
