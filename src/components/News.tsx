@@ -14,7 +14,8 @@ import p4 from '../styles/assets/askul.png'
 import p5 from '../styles/assets/Directorz.jpeg'
 import p6 from "../styles/assets/topica.jpeg"
 import p7 from "../styles/assets/masuya.jpeg"
-
+import p8 from "../styles/assets/qualiarts.png"
+import p9 from "../styles/assets/cyberagent.png"
 const Works: React.FC = () => {
     return (
         <section>
@@ -28,17 +29,17 @@ const Works: React.FC = () => {
                                     <CardMedia
                                     component="img"
                                     height='190'
-                                    image={p1}
+                                    image={p9}
                                     alt="project 1"
                                     />
                                     <CardContent>
                                     <Typography gutterBottom variant="h5" component="div" sx={{fontWeight: 600}}>
-                                        HRBrain Internship
+                                        CyberAgent Unofficial part-time job
                                     </Typography>
                                     <Typography variant="body2" color="text.secondary" textAlign={"left"}>
-                                        <b>Period:</b> 2 days<br />
-                                        <b>Developers:</b> 4 people<br />
-                                        <b>Content:</b> I was able to come up with a service to solve HR problems at the Ideathon and was able to win.<br />
+                                        <b>Period:</b> writing <br />
+                                        <b>Developers:</b> writing <br />
+                                        <b>Content:</b> writing <br />
                                     </Typography>
                                     </CardContent>
                                 </CardActionArea>
@@ -58,17 +59,17 @@ const Works: React.FC = () => {
                                         <CardMedia
                                         component="img"
                                         height='190'
-                                        image={p2}
+                                        image={p8}
                                         alt="project 2"
                                         />
                                         <CardContent>
                                         <Typography gutterBottom variant="h5" component="div" sx={{fontWeight: 600}}>
-                                            Nifty Internship
+                                        Qualiarts Unofficial part-time job
                                         </Typography>
                                     <Typography variant="body2" color="text.secondary" textAlign={"left"}>
-                                        <b>Period:</b> 3 days<br />
-                                        <b>Developers:</b> 4 people<br />
-                                        <b>Content:</b> I participated in an internship where I was asked to improve the existing HP using Scrum.I acted as the PO and made the final decision within the team.<br />
+                                        <b>Period:</b> writing <br />
+                                        <b>Developers:</b> writing <br />
+                                        <b>Content:</b> writing <br />
                                     </Typography>
                                         </CardContent>
                                     </CardActionArea>
@@ -233,7 +234,69 @@ const Works: React.FC = () => {
                             </Card>
                             </Box>
                         </Grid>
+                        <Grid item xs={6} md={4}>
+                            <Box>
+                            <Card sx={{ maxWidth: 345}}>
+                                <CardActionArea>
+                                    <CardMedia
+                                    component="img"
+                                    height='190'
+                                    image={p1}
+                                    alt="project 1"
+                                    />
+                                    <CardContent>
+                                    <Typography gutterBottom variant="h5" component="div" sx={{fontWeight: 600}}>
+                                        HRBrain Internship
+                                    </Typography>
+                                    <Typography variant="body2" color="text.secondary" textAlign={"left"}>
+                                        <b>Period:</b> 2 days<br />
+                                        <b>Developers:</b> 4 people<br />
+                                        <b>Content:</b> I was able to come up with a service to solve HR problems at the Ideathon and was able to win.<br />
+                                    </Typography>
+                                    </CardContent>
+                                </CardActionArea>
+                                <CardActions>
+                                    <Button size="small" sx={{color: '#dda73b'}}>
+                                        <Link href="https://talent.supporterz.jp/events/6bd10ab3-cbdc-408a-acd0-63cb00365202/" target="_blank" underline="none" color="inherit">internship
+                                        </Link>
+                                    </Button>
+                                </CardActions>
+                            </Card>
+                            </Box>
+                        </Grid>
+                        <Grid item xs={6} md={4}>
+                            <Box>
+                                <Card sx={{ maxWidth: 345 }}>
+                                    <CardActionArea>
+                                        <CardMedia
+                                        component="img"
+                                        height='190'
+                                        image={p2}
+                                        alt="project 2"
+                                        />
+                                        <CardContent>
+                                        <Typography gutterBottom variant="h5" component="div" sx={{fontWeight: 600}}>
+                                            Nifty Internship
+                                        </Typography>
+                                    <Typography variant="body2" color="text.secondary" textAlign={"left"}>
+                                        <b>Period:</b> 3 days<br />
+                                        <b>Developers:</b> 4 people<br />
+                                        <b>Content:</b> I participated in an internship where I was asked to improve the existing HP using Scrum.I acted as the PO and made the final decision within the team.<br />
+                                    </Typography>
+                                        </CardContent>
+                                    </CardActionArea>
+                                    <CardActions>
+                                        <Button size="small" sx={{color: '#dda73b'}}>
+                                        <Link href="https://www.nifty.com/" target="_blank" underline="none" color="inherit">HP
+                                        </Link>
+
+                                        </Button>
+                                    </CardActions>
+                                </Card>
+                            </Box>
+                        </Grid>
                     </Grid>
+                    
         </GlobalBoxWrap>
         </section>
     )
