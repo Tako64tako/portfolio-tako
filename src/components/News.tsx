@@ -45,7 +45,7 @@ const Works: React.FC = () => {
                                 </CardActionArea>
                                 <CardActions>
                                     <Button size="small" sx={{color: '#dda73b'}}>
-                                        <Link href="https://talent.supporterz.jp/events/6bd10ab3-cbdc-408a-acd0-63cb00365202/" target="_blank" underline="none" color="inherit">internship
+                                        <Link href="https://www.cyberagent.co.jp/" target="_blank" underline="none" color="inherit">internship
                                         </Link>
                                     </Button>
                                 </CardActions>
@@ -75,7 +75,7 @@ const Works: React.FC = () => {
                                     </CardActionArea>
                                     <CardActions>
                                         <Button size="small" sx={{color: '#dda73b'}}>
-                                        <Link href="https://www.nifty.com/" target="_blank" underline="none" color="inherit">HP
+                                        <Link href="https://qualiarts.jp/" target="_blank" underline="none" color="inherit">HP
                                         </Link>
 
                                         </Button>
