@@ -91,7 +91,7 @@ const Works: React.FC = () => {
                                         <CardMedia
                                         component="img"
                                         height='190'
-                                        image={p8}
+                                        image={p10}
                                         alt="project 2"
                                         />
                                         <CardContent>
