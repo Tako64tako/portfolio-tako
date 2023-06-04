@@ -17,6 +17,8 @@ import p7 from "../styles/assets/masuya.jpeg"
 import p8 from "../styles/assets/qualiarts.png"
 import p9 from "../styles/assets/cyberagent.png"
 import p10 from "../styles/assets/apb.png"
+import p11 from "../styles/assets/grenge.jpg"
+
 const Works: React.FC = () => {
     return (
         <section>
@@ -77,6 +79,37 @@ const Works: React.FC = () => {
                                     <CardActions>
                                         <Button size="small" sx={{color: '#dda73b'}}>
                                         <Link href="https://qualiarts.jp/" target="_blank" underline="none" color="inherit">HP
+                                        </Link>
+
+                                        </Button>
+                                    </CardActions>
+                                </Card>
+                            </Box>
+                        </Grid>
+                                                <Grid item xs={6} md={4}>
+                            <Box>
+                                <Card sx={{ maxWidth: 345 }}>
+                                    <CardActionArea>
+                                        <CardMedia
+                                        component="img"
+                                        height='190'
+                                        image={p11}
+                                        alt="project 2"
+                                        />
+                                        <CardContent>
+                                        <Typography gutterBottom variant="h5" component="div" sx={{fontWeight: 600}}>
+                                        Grenge Unofficial part-time job
+                                        </Typography>
+                                    <Typography variant="body2" color="text.secondary" textAlign={"left"}>
+                                        <b>Period:</b> writing <br />
+                                        <b>Developers:</b> writing <br />
+                                        <b>Content:</b> writing <br />
+                                    </Typography>
+                                        </CardContent>
+                                    </CardActionArea>
+                                    <CardActions>
+                                        <Button size="small" sx={{color: '#dda73b'}}>
+                                        <Link href="https://www.grenge.co.jp/" target="_blank" underline="none" color="inherit">HP
                                         </Link>
 
                                         </Button>

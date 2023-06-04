@@ -3,7 +3,7 @@ import { Box } from "@mui/system";
 import { Grid, Link , Typography } from "@mui/material"
 import { GlobalBoxWrap, GlobalSubTitle } from "../styles/globalMUI"
 import AboutImage from '../styles/images/AboutImage.png'
-// import DownloadIcon from '@mui/icons-material/Download'
+import DownloadIcon from '@mui/icons-material/Download'
 import SportsBasketballIcon from '@mui/icons-material/SportsBasketball';
 import MenuBookIcon from '@mui/icons-material/MenuBook';
 import ComputerIcon from '@mui/icons-material/Computer';
@@ -12,7 +12,6 @@ import CakeIcon from '@mui/icons-material/Cake';
 import NetworkWifiIcon from '@mui/icons-material/NetworkWifi';
 import SchoolIcon from '@mui/icons-material/School';
 import LiveTvIcon from '@mui/icons-material/LiveTv';
-// import Resume from '../styles/Hoge.pdf'
 
 const About: React.FC = () => {
     return (
@@ -50,29 +49,20 @@ const About: React.FC = () => {
                                             borderColor: "#dda73b"
                                     }
                                     }}>
-                                        Laboratory : pluslab <NetworkWifiIcon></NetworkWifiIcon></Link><br />
+                                    Laboratory : pluslab <NetworkWifiIcon></NetworkWifiIcon></Link><br />
                                     Birthday : 2001/10/18<CakeIcon></CakeIcon><br />
                                     Birthplace : Nara prefecture<MapsHomeWorkIcon></MapsHomeWorkIcon><br />
                                     Hobbies : Programming<ComputerIcon></ComputerIcon>Reading< MenuBookIcon></ MenuBookIcon><br />
                                     Special skill : Basketball<SportsBasketballIcon></SportsBasketballIcon> <br />
                                     </Typography>
                                 </Box>
-                                {/* <Box marginTop="2rem">
+                                <Box marginTop="2rem">
                                     <Link href='https://avatars.githubusercontent.com/u/9919?s=280&v=4' underline="none" color="inherit" target="_blank" download="hoge.png">
-                                        <Button variant="contained" sx={{
-                                            backgroundColor: "#dda73b",
-                                            borderRadius: "5rem",
-                                            fontWeight: 700,
-                                            textTransform: "none",
-                                            paddingLeft: "2rem",
-                                            paddingRight: "1.4rem",
-                                            '&:hover': {
-                                                backgroundColor: "#A6802E"
-                                            }
-                                            }}>Download CV<DownloadIcon sx={{fontSize: "1.2rem", margin: "0.2rem"}}/>
-                                        </Button>
+                                        <button style={{backgroundColor: "#dda73b", color: "#fff", padding: "0.5rem 1rem", borderRadius: "5px", border: "none", cursor: "pointer"}}>
+                                            <DownloadIcon></DownloadIcon>Download my picture
+                                        </button>
                                     </Link>
-                                </Box> */}
+                                </Box>
                         </Box>
                     </Grid>
                 </Grid>
