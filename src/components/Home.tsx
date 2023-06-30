@@ -17,12 +17,6 @@ import TwitterIcon from '@mui/icons-material/Twitter';
 import LazyShow from "./LazyShow";
 import Footer from "./Footer";
 
-// const HomeBackgroundImage = styled(Box)({
-//         backgroundImage: `linear-gradient(rgba(255,255,255,0.6), rgba(255,255,255,0.6)), url(${HomeBackground})`,
-//         backgroundSize: 'cover',
-//         backgroundPosition: '50% 0',
-// })
-
 const Home: React.FC = () => {
     const myHome = useRef(null)
     const myAbout = useRef(null)
@@ -33,7 +27,6 @@ const Home: React.FC = () => {
 
     return (
         <section>
-                {/* <HomeBackgroundImage> */}
                 <section>
         <Navbar home={myHome} about={myAbout} projects={myProjects} skills={mySkills} news={ myNews } contact={myContact} />
                 </section>
@@ -102,7 +95,6 @@ const Home: React.FC = () => {
                                             width: "auto",
                                             height: "70%",
                                             borderRadius: "80%",
-                                            // boxShadow: "0 0 0 1.2rem rgb(198,198,198, 0.6), 0 0 0 2.4rem rgb(218,218,219, 0.5)"
                                         }}
                                         >
                                         </Box>
@@ -111,7 +103,6 @@ const Home: React.FC = () => {
 
                             </GlobalBoxWrap>
                         </Container>
-                {/* </HomeBackgroundImage> */}
 
                 <Container>
                     <LazyShow xCoordinates={-50} yCoordinates={0}>

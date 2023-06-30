@@ -361,7 +361,6 @@ const Works: React.FC = () => {
                             </Box>
                         </Grid>
                     </Grid>
-                    
         </GlobalBoxWrap>
         </section>
     )
