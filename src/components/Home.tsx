@@ -7,7 +7,7 @@ import Skills from "./Skills";
 import Projects from "./Works";
 import Contact from "./Contact";
 import News from "./News";
-import {Box, styled } from "@mui/system";
+import {Box} from "@mui/system";
 import ProfileImage from '../styles/images/MyAvatar.jpg'
 import EmailIcon from '@mui/icons-material/Email';
 import LocationOnIcon from '@mui/icons-material/LocationOn';
