@@ -56,13 +56,13 @@ const About: React.FC = () => {
                                     Special skill : Basketball<SportsBasketballIcon></SportsBasketballIcon> <br />
                                     </Typography>
                                 </Box>
-                                <Box marginTop="2rem">
+                                {/* <Box marginTop="2rem">
                                     <Link href='https://avatars.githubusercontent.com/u/9919?s=280&v=4' underline="none" color="inherit" target="_blank" download="hoge.png">
                                         <button style={{backgroundColor: "#dda73b", color: "#fff", padding: "0.5rem 1rem", borderRadius: "5px", border: "none", cursor: "pointer"}}>
                                             <DownloadIcon></DownloadIcon>Download my picture
                                         </button>
                                     </Link>
-                                </Box>
+                                </Box> */}
                         </Box>
                     </Grid>
                 </Grid>

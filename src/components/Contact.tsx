@@ -14,7 +14,7 @@ const Contact: React.FC = () => {
                 <Box sx={{margin: '7rem'}}>
                   <GlobalSubTitle>Contact Me</GlobalSubTitle>
                     <Box sx={{margin: '1rem'}}>
-                        <Link href="mailto:contactjustincodes@gmail.com"
+                        <Link href=""
                         sx={{
                             color: '#dda73b',
                             textDecoration: 'none'
