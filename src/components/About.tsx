@@ -3,7 +3,6 @@ import { Box } from "@mui/system";
 import { Grid, Link , Typography } from "@mui/material"
 import { GlobalBoxWrap, GlobalSubTitle } from "../styles/globalMUI"
 import AboutImage from '../styles/images/AboutImage.png'
-import DownloadIcon from '@mui/icons-material/Download'
 import SportsBasketballIcon from '@mui/icons-material/SportsBasketball';
 import MenuBookIcon from '@mui/icons-material/MenuBook';
 import ComputerIcon from '@mui/icons-material/Computer';
@@ -12,6 +11,7 @@ import CakeIcon from '@mui/icons-material/Cake';
 import NetworkWifiIcon from '@mui/icons-material/NetworkWifi';
 import SchoolIcon from '@mui/icons-material/School';
 import LiveTvIcon from '@mui/icons-material/LiveTv';
+import LocalBarIcon from '@mui/icons-material/LocalBar';
 
 const About: React.FC = () => {
     return (
@@ -53,7 +53,7 @@ const About: React.FC = () => {
                                     Birthday : 2001/10/18<CakeIcon></CakeIcon><br />
                                     Birthplace : Nara prefecture<MapsHomeWorkIcon></MapsHomeWorkIcon><br />
                                     Hobbies : Programming<ComputerIcon></ComputerIcon>Reading< MenuBookIcon></ MenuBookIcon><br />
-                                    Special skill : Basketball<SportsBasketballIcon></SportsBasketballIcon> <br />
+                                    Special skill : Basketball<SportsBasketballIcon></SportsBasketballIcon> Alcohol<LocalBarIcon></LocalBarIcon><br />
                                     </Typography>
                                 </Box>
                                 {/* <Box marginTop="2rem">

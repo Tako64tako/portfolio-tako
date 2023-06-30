@@ -8,7 +8,7 @@ import Projects from "./Works";
 import Contact from "./Contact";
 import News from "./News";
 import {Box} from "@mui/system";
-import ProfileImage from '../styles/images/MyAvatar.jpg'
+import ProfileImage from '../styles/images/Yuhi.jpg'
 import EmailIcon from '@mui/icons-material/Email';
 import LocationOnIcon from '@mui/icons-material/LocationOn';
 import GitHubIcon from "@mui/icons-material/GitHub";
@@ -94,7 +94,7 @@ const Home: React.FC = () => {
                                         sx={{
                                             width: "auto",
                                             height: "70%",
-                                            borderRadius: "80%",
+                                            borderRadius: "20%",
                                         }}
                                         >
                                         </Box>
