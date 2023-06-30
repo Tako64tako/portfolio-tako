@@ -6,8 +6,6 @@ import SkillsImage  from '../styles/images/SkillImage.png'
 
 const ourSkills = ['C', 'C++', 'C#', 'JavaScript', 'TypeScript', 'Python', 'Java', 'Go', 'HTML', 'CSS', 'React','React Native','Nuxt', 'Next', 'Vue' , 'Node', 'VBA','PHP', 'Flask', 'Django', 'Cue', 'PostgreSQL', 'MySQL', 'Unity', 'Open CV','Open GL','Bootstrap', 'Git' ,'Docker','AWS','GCP','Server','Raspberry Pi','Leafony']
 
-
-// console.log(ourSkills[0]);
 const Skills: React.FC = () => {
     return (
         <section>

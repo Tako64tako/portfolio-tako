@@ -16,8 +16,6 @@ interface NavbarProps {
   contact: any
 }
 
-// const isWide = useMedia({ minWidth: "1000px" });
-
 const NavbarButton = styled(Button)({
       color: '#c29334',
       margin: '1rem',
@@ -42,16 +40,13 @@ const Navbar:React.FC<NavbarProps> = ({home, about, projects, skills, contact,ne
   }}
     >
       <MediaQuery query="(min-width: 594px)">
-        {/* <Menu> */}
-            <NavbarButton>Home</NavbarButton>
-            <NavbarButton onClick={scrollAbout}>About</NavbarButton>
-            <NavbarButton onClick={scrollSkills}>Skills</NavbarButton>
-            <NavbarButton onClick={scrollProjects}>Projects</NavbarButton>
-            <NavbarButton onClick={scrollNews}>News</NavbarButton>
-            <NavbarButton onClick={scrollContact}>Contact</NavbarButton>
-          {/* <Thema></Thema> */}
-          {/* </Menu> */}
-        </MediaQuery>
+        <NavbarButton>Home</NavbarButton>
+        <NavbarButton onClick={scrollAbout}>About</NavbarButton>
+        <NavbarButton onClick={scrollSkills}>Skills</NavbarButton>
+        <NavbarButton onClick={scrollProjects}>Projects</NavbarButton>
+        <NavbarButton onClick={scrollNews}>News</NavbarButton>
+        <NavbarButton onClick={scrollContact}>Contact</NavbarButton>
+      </MediaQuery>
         <MediaQuery query="(max-width: 593px)">
           <Menu >
             <NavbarButton>Home</NavbarButton>
