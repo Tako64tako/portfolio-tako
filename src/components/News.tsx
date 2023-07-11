@@ -41,7 +41,6 @@ const Works: React.FC = () => {
                                     </Typography>
                                     <Typography variant="body2" color="text.secondary" textAlign={"left"}>
                                         <b>Period:</b> writing <br />
-                                        <b>Developers:</b> writing <br />
                                         <b>Content:</b> writing <br />
                                     </Typography>
                                     </CardContent>
@@ -71,7 +70,6 @@ const Works: React.FC = () => {
                                         </Typography>
                                     <Typography variant="body2" color="text.secondary" textAlign={"left"}>
                                         <b>Period:</b> writing <br />
-                                        <b>Developers:</b> writing <br />
                                         <b>Content:</b> writing <br />
                                     </Typography>
                                         </CardContent>
@@ -102,7 +100,6 @@ const Works: React.FC = () => {
                                         </Typography>
                                     <Typography variant="body2" color="text.secondary" textAlign={"left"}>
                                         <b>Period:</b> writing <br />
-                                        <b>Developers:</b> writing <br />
                                         <b>Content:</b> writing <br />
                                     </Typography>
                                         </CardContent>
@@ -133,7 +130,6 @@ const Works: React.FC = () => {
                                         </Typography>
                                     <Typography variant="body2" color="text.secondary" textAlign={"left"}>
                                         <b>Period:</b> writing <br />
-                                        <b>Developers:</b> writing <br />
                                         <b>Content:</b> writing <br />
                                     </Typography>
                                         </CardContent>
@@ -164,7 +160,6 @@ const Works: React.FC = () => {
                                         </Typography>
                                     <Typography variant="body2" color="text.secondary" textAlign={"left"}>
                                         <b>Period:</b> 1 week<br />
-                                        <b>Developers:</b> 3 people<br />
                                         <b>Content:</b> I built a server environment for running Mozilla Hubs using Sakura's cloud infrastructure, and won the highest award.<br />
                                     </Typography>
                                         </CardContent>
@@ -194,7 +189,6 @@ const Works: React.FC = () => {
                                     </Typography>
                                     <Typography variant="body2" color="text.secondary" textAlign={"left"}>
                                         <b>Period:</b> 1 week<br />
-                                        <b>Developers:</b> 5 people<br />
                                         <b>Content:</b> I participated in an internship where a team worked on issues given to an existing system using TypeScript/Nuxt/Kotlin.<br />
                                     </Typography>
                                     </CardContent>
@@ -224,7 +218,6 @@ const Works: React.FC = () => {
                                         </Typography>
                                     <Typography variant="body2" color="text.secondary" textAlign={"left"}>
                                         <b>Period:</b> 2 week<br />
-                                        <b>Developers:</b> 3 people<br />
                                         <b>Content:</b> I operated and maintained an existing server using AWS and set up a new server.<br />
                                     </Typography>
                                         </CardContent>
@@ -255,7 +248,6 @@ const Works: React.FC = () => {
                                         </Typography>
                                     <Typography variant="body2" color="text.secondary" textAlign={"left"}>
                                         <b>Period:</b> 3 months<br />
-                                        <b>Developers:</b> 1 person<br />
                                         <b>Content:</b> Production of LP using STDIO.<br />
                                     </Typography>
                                         </CardContent>
@@ -285,7 +277,6 @@ const Works: React.FC = () => {
                                     </Typography>
                                     <Typography variant="body2" color="text.secondary" textAlign={"left"}>
                                         <b>Period:</b> 6 months<br />
-                                        <b>Developers:</b> 1 person<br />
                                         <b>Content:</b> Engaged in systemization promotion work.<br />
                                     </Typography>
                                     </CardContent>
@@ -315,7 +306,6 @@ const Works: React.FC = () => {
                                     </Typography>
                                     <Typography variant="body2" color="text.secondary" textAlign={"left"}>
                                         <b>Period:</b> 2 days<br />
-                                        <b>Developers:</b> 4 people<br />
                                         <b>Content:</b> I was able to come up with a service to solve HR problems at the Ideathon and was able to win.<br />
                                     </Typography>
                                     </CardContent>
@@ -345,7 +335,6 @@ const Works: React.FC = () => {
                                         </Typography>
                                     <Typography variant="body2" color="text.secondary" textAlign={"left"}>
                                         <b>Period:</b> 3 days<br />
-                                        <b>Developers:</b> 4 people<br />
                                         <b>Content:</b> I participated in an internship where I was asked to improve the existing HP using Scrum.I acted as the PO and made the final decision within the team.<br />
                                     </Typography>
                                         </CardContent>
