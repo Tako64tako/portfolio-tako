@@ -1,1 +1,1 @@
-hogehoge
+https://www.tako64tako.net/
