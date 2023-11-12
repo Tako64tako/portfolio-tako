@@ -283,7 +283,7 @@ const Works: React.FC = () => {
                                 </CardActionArea>
                                 <CardActions>
                                     <Button size="small" sx={{color: '#dda73b'}}>
-                                        <Link href="https://www.askul.co.jp/" target="_blank" underline="none" color="inherit">HP
+                                        <Link href="https://masuya.group/" target="_blank" underline="none" color="inherit">HP
                                         </Link>
                                     </Button>
                                 </CardActions>
